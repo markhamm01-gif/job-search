@@ -40,29 +40,35 @@ button{cursor:pointer;border:none;border-radius:var(--radius);font-size:.9rem;fo
 .btn-ghost{background:transparent;color:var(--text2);border:1px solid var(--border)}.btn-ghost:hover{background:var(--bg3);color:var(--text)}
 .btn-sm{padding:.35rem .7rem;font-size:.8rem;border-radius:7px}
 .btn-icon{padding:.5rem;border-radius:8px;background:var(--bg3);color:var(--text2);border:1px solid var(--border)}.btn-icon:hover{color:var(--text)}
+
 /* ===== PRIVACY BANNER ===== */
 .privacy-banner{background:linear-gradient(135deg,#1c2d3a,#162236);border:2px solid var(--warn);border-radius:var(--radius);padding:.85rem 1.1rem;margin:.75rem 1rem;display:flex;align-items:flex-start;gap:.75rem}
 .privacy-banner-icon{font-size:1.3rem;flex-shrink:0;margin-top:.05rem}
 .privacy-banner-text{font-size:.82rem;color:var(--text2);line-height:1.6}
 .privacy-banner-text strong{color:var(--warn)}
+
 /* ===== NAVIGATION ===== */
 nav{position:sticky;top:0;z-index:100;background:var(--bg2);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:0;padding:0 .5rem;overflow-x:auto;white-space:nowrap}
 .nav-brand{font-weight:700;font-size:1rem;color:var(--accent);padding:.75rem .5rem;flex-shrink:0;margin-right:.5rem}
 .nav-tab{padding:.75rem .85rem;font-size:.85rem;color:var(--text2);cursor:pointer;border-bottom:2px solid transparent;flex-shrink:0;transition:all .15s;background:none;border-top:none;border-left:none;border-right:none;font-weight:500}
 .nav-tab:hover{color:var(--text)}
 .nav-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
 /* ===== LAYOUT ===== */
 .page{display:none;padding:1rem;max-width:1400px;margin:0 auto}
 .page.active{display:block}
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
 .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:.75rem}
 .flex{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
 .flex-between{display:flex;align-items:center;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
+
 /* ===== CARDS ===== */
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;box-shadow:var(--shadow)}
 .card-title{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:.3rem}
 .stat-value{font-size:2rem;font-weight:700;line-height:1}
 .stat-label{font-size:.8rem;color:var(--text2);margin-top:.25rem}
+
 /* ===== STATUS BADGES ===== */
 .badge{display:inline-block;padding:.2rem .55rem;border-radius:999px;font-size:.72rem;font-weight:600;white-space:nowrap}
 .status-Found{background:#1e3a5f;color:#60a5fa}
@@ -78,12 +84,17 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg2);border-bottom:1px so
 .priority-High{background:#3a1c1c;color:#fca5a5}
 .priority-Medium{background:#2d2a1c;color:#fde68a}
 .priority-Low{background:#1e2d1e;color:#86efac}
+
 /* ===== PROGRESS BARS ===== */
 .progress-wrap{margin:.6rem 0}
 .progress-label{display:flex;justify-content:space-between;font-size:.78rem;color:var(--text2);margin-bottom:.25rem}
 .progress-bar{height:7px;background:var(--bg3);border-radius:4px;overflow:hidden}
 .progress-fill{height:100%;border-radius:4px;transition:width .5s ease}
-.fill-blue{background:var(--accent)}.fill-green{background:var(--success)}.fill-warn{background:var(--warn)}.fill-purple{background:var(--accent2)}
+.fill-blue{background:var(--accent)}
+.fill-green{background:var(--success)}
+.fill-warn{background:var(--warn)}
+.fill-purple{background:var(--accent2)}
+
 /* ===== FORMS ===== */
 .form-group{margin-bottom:.85rem}
 .form-label{display:block;font-size:.8rem;color:var(--text2);margin-bottom:.3rem;font-weight:500}
@@ -93,6 +104,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--bg2);border-bottom:1px so
 .modal{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.5rem;width:100%;max-width:680px;margin:auto;box-shadow:0 20px 60px rgba(0,0,0,.6)}
 .modal-title{font-size:1.1rem;font-weight:700;margin-bottom:1rem;color:var(--text)}
 .modal-actions{display:flex;gap:.5rem;justify-content:flex-end;margin-top:1.25rem;flex-wrap:wrap}
+
 /* ===== TABLES ===== */
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--radius)}
 table{width:100%;border-collapse:collapse;font-size:.83rem}
@@ -100,51 +112,59 @@ th{background:var(--bg3);color:var(--text2);font-weight:600;text-align:left;padd
 td{padding:.6rem .75rem;border-bottom:1px solid var(--border);vertical-align:middle}
 tr:hover td{background:rgba(255,255,255,.02)}
 .td-actions{white-space:nowrap;display:flex;gap:.3rem}
+
 /* ===== SECTION HEADERS ===== */
 .section-header{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap}
 .section-title{font-size:1.15rem;font-weight:700}
-/* ===== ACTION ITEMS ===== */
+
+/* ===== TODAY CARDS ===== */
 .action-item{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem 1rem;margin-bottom:.5rem;display:flex;align-items:flex-start;justify-content:space-between;gap:.5rem;flex-wrap:wrap}
 .action-item.overdue{border-left:3px solid var(--danger)}
 .action-item.due-today{border-left:3px solid var(--warn)}
-/* ===== LINKEDIN ===== */
+
+/* ===== LINKEDIN BUTTONS ===== */
 .li-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.6rem;margin-top:.75rem}
 .li-btn{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:.7rem 1rem;color:var(--text);font-size:.85rem;font-weight:500;display:flex;align-items:center;gap:.6rem;transition:all .15s}
 .li-btn:hover{background:var(--bg3);border-color:var(--accent)}
 .li-icon{width:20px;height:20px;flex-shrink:0;fill:#0a66c2}
-/* ===== TEMPLATES ===== */
-.template-text{font-size:.85rem;line-height:1.6;white-space:pre-wrap;color:var(--text2);border:1px solid var(--border);border-radius:8px;padding:.75rem;background:var(--bg3);min-height:80px;margin-bottom:.6rem}
+
+/* ===== TEMPLATE SECTION ===== */
+.template-box{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;margin-bottom:1rem}
 .template-fill-row{display:flex;gap:.5rem;margin-bottom:.75rem;flex-wrap:wrap}
 .template-fill-row input{max-width:220px}
+.template-text{font-size:.85rem;line-height:1.6;white-space:pre-wrap;color:var(--text2);border:1px solid var(--border);border-radius:8px;padding:.75rem;background:var(--bg3);min-height:80px;margin-bottom:.6rem}
+
 /* ===== FILTERS ===== */
 .filters{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:.85rem 1rem;margin-bottom:1rem}
 .filter-row{display:flex;gap:.5rem;flex-wrap:wrap;align-items:center}
 .filter-row input,.filter-row select{max-width:180px;font-size:.82rem;padding:.4rem .6rem}
+
 /* ===== TOAST ===== */
 #toast{position:fixed;bottom:1.5rem;right:1.5rem;background:var(--success);color:#fff;padding:.75rem 1.25rem;border-radius:var(--radius);font-size:.9rem;font-weight:600;opacity:0;transition:opacity .3s;z-index:999;pointer-events:none;max-width:280px}
 #toast.show{opacity:1}
 #toast.err{background:var(--danger)}
+
 /* ===== ATTENTION STRIP ===== */
 .attention-strip{background:linear-gradient(135deg,#3a1c1c,#2d1c1c);border:1px solid var(--danger);border-radius:var(--radius);padding:.7rem 1rem;margin-bottom:1rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
 .attention-strip.warn{background:linear-gradient(135deg,#3a2a1c,#2d231c);border-color:var(--warn)}
 .attention-pill{background:rgba(0,0,0,.3);border-radius:999px;padding:.2rem .65rem;font-size:.78rem;font-weight:700;white-space:nowrap}
-/* ===== MISC ===== */
+
+/* ===== STATUS DROPDOWN IN TABLE ===== */
 .quick-advert-btn{background:var(--accent);color:#fff;border:none;border-radius:7px;padding:.3rem .65rem;font-size:.75rem;font-weight:700;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:.3rem}
 .quick-advert-btn:hover{background:#2563eb}
 .site-chk{display:flex;align-items:center;gap:.45rem;font-size:.85rem;color:var(--text);background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.45rem .7rem;cursor:pointer;transition:border .15s}
 .site-chk:hover{border-color:var(--accent)}
 .site-chk input[type=checkbox]{width:15px;height:15px;accent-color:var(--accent);flex-shrink:0;cursor:pointer}
+
+/* ===== CV SUGGESTION ===== */
 .cv-suggest{display:inline-block;margin-left:.5rem;font-size:.75rem;padding:.15rem .5rem;border-radius:999px;font-weight:700}
 .cv-suggest.cyber{background:#1c2d3a;color:#38bdf8}
 .cv-suggest.itpm{background:#1c3a2a;color:#4ade80}
+
+/* ===== QUICK-ADD MODAL ===== */
 .quick-add-modal .modal{max-width:480px;border:2px solid var(--accent)}
-/* ===== PRIVACY CHECK ===== */
-.privacy-issue{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.65rem .85rem;margin-bottom:.5rem;display:flex;gap:.75rem;align-items:flex-start}
-.privacy-issue.high{border-left:3px solid var(--danger)}
-.privacy-issue.medium{border-left:3px solid var(--warn)}
-.privacy-issue-field{font-size:.78rem;font-weight:700;color:var(--text);white-space:nowrap;min-width:110px}
-.privacy-issue-detail{font-size:.8rem;color:var(--text2);flex:1}
-.privacy-issue-action{font-size:.75rem;color:var(--warn);font-weight:600;white-space:nowrap}
+
+/* ===== MOBILE ===== */
 @media(max-width:600px){
   .page{padding:.65rem}
   .modal{padding:1rem}
@@ -161,17 +181,17 @@ tr:hover td{background:rgba(255,255,255,.02)}
 
 <!-- ===== PRIVACY BANNER ===== -->
 <div class="privacy-banner">
-  <div class="privacy-banner-icon">&#x1F512;</div>
+  <div class="privacy-banner-icon">🔒</div>
   <div class="privacy-banner-text">
     <strong>Privacy reminder:</strong> Only save public job advert data to this dashboard when using the GitHub Pages version.
     Do not enter personal details, CV file links, recruiter private contact details, salary expectations, financial notes, or private application notes.
-    Data is stored in your browser only &mdash; nothing is sent to any server.
+    Data is stored in your browser only — nothing is sent to any server.
   </div>
 </div>
 
 <!-- ===== NAVIGATION ===== -->
 <nav>
-  <div class="nav-brand">&#x1F5C2; Job Search</div>
+  <div class="nav-brand">🗂 Job Search</div>
   <button class="nav-tab active" onclick="showPage('dashboard')">Dashboard</button>
   <button class="nav-tab" onclick="showPage('applications')">Applications</button>
   <button class="nav-tab" onclick="showPage('recruiters')">Recruiters</button>
@@ -180,30 +200,37 @@ tr:hover td{background:rgba(255,255,255,.02)}
   <button class="nav-tab" onclick="showPage('linkedin')">LinkedIn</button>
   <button class="nav-tab" onclick="showPage('data')">Data</button>
 </nav>
+
+<!-- TOAST -->
 <div id="toast"></div>
 
-<!-- ==================== DASHBOARD ==================== -->
+<!-- ==================== PAGE: DASHBOARD ==================== -->
 <div id="page-dashboard" class="page active">
   <div class="section-header" style="margin-top:.5rem">
     <div>
-      <div class="section-title">Dashboard &mdash; <span id="dash-date"></span></div>
+      <div class="section-title">Dashboard — <span id="dash-date"></span></div>
       <div style="font-size:.78rem;color:var(--text3);margin-top:.15rem">Tap any stat card to see those roles in Applications</div>
     </div>
     <div class="flex">
-      <button class="btn btn-success btn-sm" onclick="openQuickAdd()">&#x26A1; Quick Add Role</button>
+      <button class="btn btn-success btn-sm" onclick="openQuickAdd()">⚡ Quick Add Role</button>
       <button class="btn btn-primary btn-sm" onclick="showPage('applications');openAppModal()">+ Full Form</button>
     </div>
   </div>
+
+  <!-- NEEDS ATTENTION STRIP -->
   <div id="dash-attention"></div>
+
+  <!-- SUMMARY STATS -->
   <div class="grid-4" id="dash-stats"></div>
-  <!-- Job Site Search -->
-  <div class="card" style="margin-top:1rem">
+
+  <!-- JOB SITE SEARCH PANEL -->
+  <div class="card" style="margin-top:1rem" id="site-search-panel">
     <div class="flex-between" style="margin-bottom:.75rem">
       <div>
-        <div class="card-title" style="margin-bottom:.1rem">&#x1F50D; Search Job Sites</div>
-        <div style="font-size:.78rem;color:var(--text3)">Tick sites, choose your role focus, then hit Search.</div>
+        <div class="card-title" style="margin-bottom:.1rem">🔍 Search Job Sites</div>
+        <div style="font-size:.78rem;color:var(--text3)">Tick sites, choose your role focus, then hit Search to open pre-filtered searches.</div>
       </div>
-      <button class="btn btn-ghost btn-sm" onclick="toggleSearchPanel()" id="site-search-toggle">&#x25B2; Hide</button>
+      <button class="btn btn-ghost btn-sm" onclick="toggleSearchPanel()" id="site-search-toggle">▲ Hide</button>
     </div>
     <div id="site-search-body">
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:.5rem .75rem;margin-bottom:.85rem">
@@ -220,80 +247,138 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="flex" style="gap:.75rem;margin-bottom:.75rem;flex-wrap:wrap">
         <div style="flex:1;min-width:160px">
           <div style="font-size:.75rem;color:var(--text3);margin-bottom:.3rem">Role Focus</div>
-          <select id="ss-rolefocus"><option value="both">Both (Cyber + IT PM)</option><option value="cyber">Cyber / SecOps PM only</option><option value="itpm">IT Project Manager only</option></select>
+          <select id="ss-rolefocus">
+            <option value="both">Both (Cyber + IT PM)</option>
+            <option value="cyber">Cyber / SecOps PM only</option>
+            <option value="itpm">IT Project Manager only</option>
+          </select>
         </div>
         <div style="flex:1;min-width:160px">
           <div style="font-size:.75rem;color:var(--text3);margin-bottom:.3rem">Contract Type</div>
-          <select id="ss-contract"><option value="contract">Contract only</option><option value="any">Contract + Permanent</option></select>
+          <select id="ss-contract">
+            <option value="contract">Contract only</option>
+            <option value="any">Contract + Permanent</option>
+          </select>
         </div>
         <div style="flex:1;min-width:160px">
           <div style="font-size:.75rem;color:var(--text3);margin-bottom:.3rem">Location</div>
-          <select id="ss-location"><option value="london">London / Hybrid</option><option value="uk">UK-wide / Remote</option><option value="remote">Remote only</option></select>
+          <select id="ss-location">
+            <option value="london">London / Hybrid</option>
+            <option value="uk">UK-wide / Remote</option>
+            <option value="remote">Remote only</option>
+          </select>
         </div>
       </div>
       <div class="flex" style="gap:.5rem">
-        <button class="btn btn-primary" onclick="runSiteSearch()">&#x1F50D; Open Job Site Searches</button>
+        <button class="btn btn-primary" id="ss-run-btn" onclick="runSiteSearch()">🔍 Open Job Site Searches</button>
         <button class="btn btn-ghost btn-sm" onclick="checkAllSites(true)">Tick All</button>
         <button class="btn btn-ghost btn-sm" onclick="checkAllSites(false)">Untick All</button>
       </div>
       <div id="ss-links" style="margin-top:.75rem;display:none"></div>
     </div>
   </div>
-  <!-- Progress -->
+
+  <!-- PROGRESS -->
   <div class="grid-2" style="margin-top:1rem">
     <div class="card">
       <div class="card-title">Today's Targets</div>
-      <div class="progress-wrap"><div class="progress-label"><span>Applications (target: 6&ndash;8)</span><span id="prog-apps-today-val">0/8</span></div><div class="progress-bar"><div class="progress-fill fill-blue" id="prog-apps-today" style="width:0%"></div></div></div>
-      <div class="progress-wrap"><div class="progress-label"><span>Recruiters contacted (target: 10)</span><span id="prog-rec-today-val">0/10</span></div><div class="progress-bar"><div class="progress-fill fill-green" id="prog-rec-today" style="width:0%"></div></div></div>
-      <div class="progress-wrap"><div class="progress-label"><span>Follow-ups (target: all due)</span><span id="prog-fu-today-val">0</span></div><div class="progress-bar"><div class="progress-fill fill-warn" id="prog-fu-today" style="width:0%"></div></div></div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Applications (target: 6–8)</span><span id="prog-apps-today-val">0/8</span></div>
+        <div class="progress-bar"><div class="progress-fill fill-blue" id="prog-apps-today" style="width:0%"></div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Recruiters contacted (target: 10)</span><span id="prog-rec-today-val">0/10</span></div>
+        <div class="progress-bar"><div class="progress-fill fill-green" id="prog-rec-today" style="width:0%"></div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Follow-ups (target: all due)</span><span id="prog-fu-today-val">0</span></div>
+        <div class="progress-bar"><div class="progress-fill fill-warn" id="prog-fu-today" style="width:0%"></div></div>
+      </div>
     </div>
     <div class="card">
-      <div class="card-title">This Week's Targets (Mon&ndash;Fri)</div>
-      <div class="progress-wrap"><div class="progress-label"><span>Applications (target: 25&ndash;35)</span><span id="prog-apps-week-val">0/35</span></div><div class="progress-bar"><div class="progress-fill fill-blue" id="prog-apps-week" style="width:0%"></div></div></div>
-      <div class="progress-wrap"><div class="progress-label"><span>Recruiters contacted (target: 40)</span><span id="prog-rec-week-val">0/40</span></div><div class="progress-bar"><div class="progress-fill fill-green" id="prog-rec-week" style="width:0%"></div></div></div>
-      <div class="progress-wrap"><div class="progress-label"><span>Calls booked (aim: 5+)</span><span id="prog-calls-week-val">0/5</span></div><div class="progress-bar"><div class="progress-fill fill-purple" id="prog-calls-week" style="width:0%"></div></div></div>
+      <div class="card-title">This Week's Targets (Mon–Fri)</div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Applications (target: 25–35)</span><span id="prog-apps-week-val">0/35</span></div>
+        <div class="progress-bar"><div class="progress-fill fill-blue" id="prog-apps-week" style="width:0%"></div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Recruiters contacted (target: 40)</span><span id="prog-rec-week-val">0/40</span></div>
+        <div class="progress-bar"><div class="progress-fill fill-green" id="prog-rec-week" style="width:0%"></div></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Calls booked (aim: 5+)</span><span id="prog-calls-week-val">0/5</span></div>
+        <div class="progress-bar"><div class="progress-fill fill-purple" id="prog-calls-week" style="width:0%"></div></div>
+      </div>
     </div>
   </div>
+
+  <!-- TODAY'S ACTIONS -->
   <div class="grid-2" style="margin-top:1rem">
-    <div class="card"><div class="card-title" style="margin-bottom:.75rem">&#x26A1; Follow-ups Due / Overdue</div><div id="dash-followups"><p style="color:var(--text3);font-size:.85rem">No follow-ups due.</p></div></div>
-    <div class="card"><div class="card-title" style="margin-bottom:.75rem">&#x1F525; High Priority Roles</div><div id="dash-highpriority"><p style="color:var(--text3);font-size:.85rem">No high-priority roles.</p></div></div>
+    <div class="card">
+      <div class="card-title" style="margin-bottom:.75rem">⚡ Follow-ups Due / Overdue</div>
+      <div id="dash-followups"><p style="color:var(--text3);font-size:.85rem">No follow-ups due.</p></div>
+    </div>
+    <div class="card">
+      <div class="card-title" style="margin-bottom:.75rem">🔥 High Priority Roles</div>
+      <div id="dash-highpriority"><p style="color:var(--text3);font-size:.85rem">No high-priority roles.</p></div>
+    </div>
   </div>
-  <div class="card" style="margin-top:1rem"><div class="card-title" style="margin-bottom:.75rem">&#x1F4CB; Roles Awaiting Feedback</div><div id="dash-awaiting"><p style="color:var(--text3);font-size:.85rem">None awaiting feedback.</p></div></div>
+  <div class="card" style="margin-top:1rem">
+    <div class="card-title" style="margin-bottom:.75rem">📋 Roles Awaiting Feedback</div>
+    <div id="dash-awaiting"><p style="color:var(--text3);font-size:.85rem">None awaiting feedback.</p></div>
+  </div>
 </div>
 
-<!-- ==================== APPLICATIONS ==================== -->
+<!-- ==================== PAGE: APPLICATIONS ==================== -->
 <div id="page-applications" class="page">
   <div class="section-header">
     <div class="section-title">Applications</div>
     <div class="flex">
-      <button class="btn btn-success btn-sm" onclick="openQuickAdd()">&#x26A1; Quick Add</button>
+      <button class="btn btn-success btn-sm" onclick="openQuickAdd()">⚡ Quick Add</button>
       <button class="btn btn-primary btn-sm" onclick="openAppModal()">+ Full Form</button>
       <button class="btn btn-ghost btn-sm" onclick="exportAppsCSV()">Export CSV</button>
     </div>
   </div>
+
   <div id="apps-filter-banner" style="display:none"></div>
+
   <div class="filters">
     <div class="filter-row">
-      <input type="search" id="app-search" placeholder="Search roles, companies&hellip;" oninput="renderApps()">
-      <select id="f-status" onchange="renderApps()"><option value="">All Statuses</option><option>Found</option><option>Applied</option><option>Recruiter contacted</option><option>Call booked</option><option>Submitted to client</option><option>Interview booked</option><option>Awaiting feedback</option><option>Rejected</option><option>Offer</option><option>Closed</option></select>
+      <input type="search" id="app-search" placeholder="Search roles, companies…" oninput="renderApps()">
+      <select id="f-status" onchange="renderApps()"><option value="">All Statuses</option>
+        <option>Found</option><option>Applied</option><option>Recruiter contacted</option><option>Call booked</option>
+        <option>Submitted to client</option><option>Interview booked</option><option>Awaiting feedback</option>
+        <option>Rejected</option><option>Offer</option><option>Closed</option>
+      </select>
       <select id="f-cv" onchange="renderApps()"><option value="">All CVs</option><option>Cyber CV</option><option>IT PM CV</option></select>
-      <select id="f-roletype" onchange="renderApps()"><option value="">All Types</option><option>Cyber / SecOps</option><option>IT PM</option><option>Infrastructure</option><option>Transformation</option><option>Financial Services</option><option>Other</option></select>
-      <select id="f-ir35" onchange="renderApps()"><option value="">All IR35</option><option>Inside IR35</option><option>Outside IR35</option><option>Unknown</option></select>
+      <select id="f-roletype" onchange="renderApps()"><option value="">All Types</option>
+        <option>Cyber / SecOps</option><option>IT PM</option><option>Infrastructure</option>
+        <option>Transformation</option><option>Financial Services</option><option>Other</option>
+      </select>
+      <select id="f-ir35" onchange="renderApps()"><option value="">All IR35</option>
+        <option>Inside IR35</option><option>Outside IR35</option><option>Unknown</option>
+      </select>
       <select id="f-priority" onchange="renderApps()"><option value="">All Priorities</option><option>High</option><option>Medium</option><option>Low</option></select>
       <select id="f-agency" onchange="renderApps()"><option value="">All Agencies</option></select>
-      <label class="flex" style="gap:.3rem;font-size:.82rem;white-space:nowrap;cursor:pointer"><input type="checkbox" id="f-duetoday" onchange="renderApps()"> Follow-up due today</label>
+      <label class="flex" style="gap:.3rem;font-size:.82rem;white-space:nowrap;cursor:pointer">
+        <input type="checkbox" id="f-duetoday" onchange="renderApps()"> Follow-up due today
+      </label>
     </div>
   </div>
+
   <div class="table-wrap">
     <table id="apps-table">
-      <thead><tr><th>Role</th><th>Company</th><th>Agency</th><th>Status</th><th>CV</th><th>Priority</th><th>Rate</th><th>IR35</th><th>Applied</th><th>Follow-up</th><th>Actions</th></tr></thead>
+      <thead><tr>
+        <th>Role</th><th>Company</th><th>Agency</th><th>Status</th><th>CV</th>
+        <th>Priority</th><th>Rate</th><th>IR35</th><th>Applied</th><th>Follow-up</th><th>Actions</th>
+      </tr></thead>
       <tbody id="apps-tbody"></tbody>
     </table>
   </div>
   <p id="apps-empty" style="color:var(--text3);text-align:center;padding:2rem;display:none">No applications yet. Click + Add to get started.</p>
 </div>
 
-<!-- ==================== RECRUITERS ==================== -->
+<!-- ==================== PAGE: RECRUITERS ==================== -->
 <div id="page-recruiters" class="page">
   <div class="section-header">
     <div class="section-title">Recruiter Tracker</div>
@@ -302,18 +387,26 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <button class="btn btn-ghost btn-sm" onclick="exportRecsCSV()">Export CSV</button>
     </div>
   </div>
-  <div class="filters"><div class="filter-row">
-    <input type="search" id="rec-search" placeholder="Search recruiters, agencies&hellip;" oninput="renderRecs()">
-    <select id="rf-agency" onchange="renderRecs()"><option value="">All Agencies</option></select>
-  </div></div>
+
+  <div class="filters">
+    <div class="filter-row">
+      <input type="search" id="rec-search" placeholder="Search recruiters, agencies…" oninput="renderRecs()">
+      <select id="rf-agency" onchange="renderRecs()"><option value="">All Agencies</option></select>
+    </div>
+  </div>
+
   <div class="table-wrap">
-    <table><thead><tr><th>Name</th><th>Agency</th><th>Specialist</th><th>Last Contact</th><th>Next Follow-up</th><th>Roles Discussed</th><th>Notes</th><th>Actions</th></tr></thead>
-    <tbody id="recs-tbody"></tbody></table>
+    <table>
+      <thead><tr>
+        <th>Name</th><th>Agency</th><th>Specialist</th><th>Last Contact</th><th>Next Follow-up</th><th>Roles Discussed</th><th>Notes</th><th>Actions</th>
+      </tr></thead>
+      <tbody id="recs-tbody"></tbody>
+    </table>
   </div>
   <p id="recs-empty" style="color:var(--text3);text-align:center;padding:2rem;display:none">No recruiters yet. Click + Add to get started.</p>
 </div>
 
-<!-- ==================== DAILY LOG ==================== -->
+<!-- ==================== PAGE: DAILY LOG ==================== -->
 <div id="page-daily" class="page">
   <div class="section-header">
     <div class="section-title">Daily Activity Log</div>
@@ -322,123 +415,204 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <button class="btn btn-ghost btn-sm" onclick="exportDailyCSV()">Export CSV</button>
     </div>
   </div>
+
   <div class="table-wrap">
-    <table><thead><tr><th>Date</th><th>Applications</th><th>Recruiters</th><th>Follow-ups</th><th>Calls Booked</th><th>Interviews</th><th>Notes</th><th>Actions</th></tr></thead>
-    <tbody id="daily-tbody"></tbody></table>
+    <table>
+      <thead><tr>
+        <th>Date</th><th>Applications</th><th>Recruiters</th><th>Follow-ups</th>
+        <th>Calls Booked</th><th>Interviews</th><th>Notes</th><th>Actions</th>
+      </tr></thead>
+      <tbody id="daily-tbody"></tbody>
+    </table>
   </div>
   <p id="daily-empty" style="color:var(--text3);text-align:center;padding:2rem;display:none">No log entries yet. Click + Log Today.</p>
 </div>
 
-<!-- ==================== TEMPLATES ==================== -->
+<!-- ==================== PAGE: TEMPLATES ==================== -->
 <div id="page-templates" class="page">
   <div class="section-title" style="margin-bottom:1rem">Message Templates</div>
+
   <div class="card" style="margin-bottom:1rem">
-    <div style="font-weight:700;margin-bottom:.75rem">&#x1F4E8; Standard Recruiter Outreach</div>
-    <div class="template-fill-row"><div><label class="form-label">Recruiter's Name</label><input type="text" id="t1-name" placeholder="e.g. Sarah" oninput="buildTemplate1()"></div></div>
-    <div class="template-text" id="template1-output"></div>
-    <button class="btn btn-primary btn-sm" onclick="copyTemplate('template1-output')">&#x1F4CB; Copy to Clipboard</button>
-  </div>
-  <div class="card">
-    <div style="font-weight:700;margin-bottom:.75rem">&#x1F501; Follow-Up Message</div>
+    <div style="font-weight:700;margin-bottom:.75rem">📨 Standard Recruiter Outreach</div>
     <div class="template-fill-row">
-      <div><label class="form-label">Recruiter's Name</label><input type="text" id="t2-name" placeholder="e.g. James" oninput="buildTemplate2()"></div>
-      <div><label class="form-label">Role Title</label><input type="text" id="t2-role" placeholder="e.g. Cyber Security PM" oninput="buildTemplate2()"></div>
+      <div>
+        <label class="form-label">Recruiter's Name</label>
+        <input type="text" id="t1-name" placeholder="e.g. Sarah" oninput="buildTemplate1()">
+      </div>
+    </div>
+    <div class="template-text" id="template1-output"></div>
+    <button class="btn btn-primary btn-sm" onclick="copyTemplate('template1-output')">📋 Copy to Clipboard</button>
+  </div>
+
+  <div class="card">
+    <div style="font-weight:700;margin-bottom:.75rem">🔁 Follow-Up Message</div>
+    <div class="template-fill-row">
+      <div>
+        <label class="form-label">Recruiter's Name</label>
+        <input type="text" id="t2-name" placeholder="e.g. James" oninput="buildTemplate2()">
+      </div>
+      <div>
+        <label class="form-label">Role Title</label>
+        <input type="text" id="t2-role" placeholder="e.g. Cyber Security PM" oninput="buildTemplate2()">
+      </div>
     </div>
     <div class="template-text" id="template2-output"></div>
-    <button class="btn btn-primary btn-sm" onclick="copyTemplate('template2-output')">&#x1F4CB; Copy to Clipboard</button>
+    <button class="btn btn-primary btn-sm" onclick="copyTemplate('template2-output')">📋 Copy to Clipboard</button>
   </div>
 </div>
 
-<!-- ==================== LINKEDIN ==================== -->
+<!-- ==================== PAGE: LINKEDIN ==================== -->
 <div id="page-linkedin" class="page">
   <div class="section-title" style="margin-bottom:.25rem">LinkedIn Quick Search</div>
   <p style="color:var(--text2);font-size:.87rem;margin-bottom:1rem">Click any button to open a pre-filtered LinkedIn job search in a new tab.</p>
-  <div class="card" style="margin-bottom:1rem"><div style="font-weight:600;margin-bottom:.75rem">&#x1F535; Cyber Security / SecOps Roles</div><div class="li-grid" id="li-cyber"></div></div>
-  <div class="card" style="margin-bottom:1rem"><div style="font-weight:600;margin-bottom:.75rem">&#x1F7E2; IT / Senior Project Manager Roles</div><div class="li-grid" id="li-itpm"></div></div>
-  <div class="card"><div style="font-weight:600;margin-bottom:.75rem">&#x1F50E; Recruiter Search</div><p style="color:var(--text2);font-size:.85rem;margin-bottom:.75rem">Find specialist recruiters on LinkedIn.</p><div class="li-grid" id="li-recs"></div></div>
+
+  <div class="card" style="margin-bottom:1rem">
+    <div style="font-weight:600;margin-bottom:.75rem">🔵 Cyber Security / SecOps Roles</div>
+    <div class="li-grid" id="li-cyber"></div>
+  </div>
+  <div class="card" style="margin-bottom:1rem">
+    <div style="font-weight:600;margin-bottom:.75rem">🟢 IT / Senior Project Manager Roles</div>
+    <div class="li-grid" id="li-itpm"></div>
+  </div>
+  <div class="card">
+    <div style="font-weight:600;margin-bottom:.75rem">🔎 Recruiter Search</div>
+    <p style="color:var(--text2);font-size:.85rem;margin-bottom:.75rem">Find specialist recruiters on LinkedIn.</p>
+    <div class="li-grid" id="li-recs"></div>
+  </div>
 </div>
 
-<!-- ==================== DATA ==================== -->
+<!-- ==================== PAGE: DATA ==================== -->
 <div id="page-data" class="page">
   <div class="section-title" style="margin-bottom:.25rem">Data Management</div>
-  <p style="color:var(--text2);font-size:.87rem;margin-bottom:1rem">Back up your data regularly. Use Export Private Backup to save everything. Use Export Public Data to get a clean version safe for sharing.</p>
-
-  <!-- Privacy Check -->
-  <div class="card" style="margin-bottom:1rem;border-color:var(--info)">
-    <div style="font-weight:700;margin-bottom:.5rem;color:var(--info)">&#x1F512; Privacy Check</div>
-    <p style="font-size:.85rem;color:var(--text2);margin-bottom:.75rem">Scan your data for anything that should not be on a public dashboard before exporting or sharing.</p>
-    <button class="btn btn-primary" onclick="runPrivacyCheck()">&#x1F50D; Run Privacy Check</button>
-    <div id="privacy-check-results" style="margin-top:1rem;display:none"></div>
-  </div>
+  <p style="color:var(--text2);font-size:.87rem;margin-bottom:1rem">Back up your data regularly. Use the Export buttons to save a copy to your device.</p>
 
   <div class="grid-2">
     <div class="card">
-      <div style="font-weight:700;margin-bottom:.5rem">&#x1F4E4; Export</div>
-      <p style="font-size:.8rem;color:var(--text2);margin-bottom:.75rem">Private Backup includes all fields. Public Export automatically removes private details.</p>
+      <div style="font-weight:700;margin-bottom:.75rem">📤 Export</div>
       <div class="flex" style="flex-direction:column;align-items:flex-start;gap:.5rem">
-        <button class="btn btn-success" onclick="exportJSON()">&#x1F512; Export Private Backup (JSON)</button>
-        <button class="btn btn-primary" onclick="exportPublicJSON()">&#x1F310; Export Public GitHub Data (JSON)</button>
+        <button class="btn btn-warn" onclick="runPrivacyCheck()">🔍 Run Privacy Check</button>
+        <button class="btn btn-success" onclick="exportJSON()">💾 Private Backup (All Data)</button>
+        <button class="btn btn-primary" onclick="exportPublicJSON()">🌐 Export Public GitHub Data</button>
         <button class="btn btn-ghost" onclick="exportAppsCSV()">Export Applications CSV</button>
         <button class="btn btn-ghost" onclick="exportRecsCSV()">Export Recruiters CSV</button>
         <button class="btn btn-ghost" onclick="exportDailyCSV()">Export Daily Log CSV</button>
       </div>
     </div>
     <div class="card">
-      <div style="font-weight:700;margin-bottom:.75rem">&#x267B;&#xFE0F; Restore from Backup</div>
+      <div style="font-weight:700;margin-bottom:.75rem">♻️ Restore from Backup</div>
       <p style="color:var(--text2);font-size:.82rem;margin-bottom:.75rem">Only use this to restore a full backup. This <strong style="color:var(--danger)">replaces</strong> all current data.</p>
       <div class="flex" style="flex-direction:column;align-items:flex-start;gap:.75rem">
-        <div style="width:100%"><label class="form-label">Restore from JSON backup</label><input type="file" id="import-json" accept=".json" onchange="importJSON(this)"></div>
-        <div style="width:100%"><label class="form-label">Import Applications CSV (adds to existing)</label><input type="file" id="import-apps-csv" accept=".csv" onchange="importAppsCSV(this)"></div>
-        <div style="width:100%"><label class="form-label">Import Recruiters CSV (adds to existing)</label><input type="file" id="import-recs-csv" accept=".csv" onchange="importRecsCSV(this)"></div>
+        <div style="width:100%">
+          <label class="form-label">Restore from JSON backup</label>
+          <input type="file" id="import-json" accept=".json" onchange="importJSON(this)">
+        </div>
+        <div style="width:100%">
+          <label class="form-label">Import Applications CSV (adds to existing)</label>
+          <input type="file" id="import-apps-csv" accept=".csv" onchange="importAppsCSV(this)">
+        </div>
+        <div style="width:100%">
+          <label class="form-label">Import Recruiters CSV (adds to existing)</label>
+          <input type="file" id="import-recs-csv" accept=".csv" onchange="importRecsCSV(this)">
+        </div>
       </div>
     </div>
   </div>
+
   <div class="card" style="margin-top:1rem;border-color:var(--danger)">
-    <div style="font-weight:700;color:var(--danger);margin-bottom:.75rem">&#x26A0;&#xFE0F; Danger Zone</div>
-    <button class="btn btn-danger" onclick="clearAllData()">&#x1F5D1; Clear All Data</button>
+    <div style="font-weight:700;color:var(--danger);margin-bottom:.75rem">⚠️ Danger Zone</div>
+    <div class="flex">
+      <button class="btn btn-danger" onclick="clearAllData()">🗑 Clear All Data</button>
+    </div>
     <p style="color:var(--text3);font-size:.8rem;margin-top:.5rem">This will permanently delete all applications, recruiters and daily logs.</p>
   </div>
 </div>
 
-<!-- ==================== MODALS ==================== -->
+<!-- ==================== MODAL: QUICK ADD ==================== -->
 <div class="modal-overlay quick-add-modal" id="quick-add-modal">
   <div class="modal">
-    <div class="modal-title">&#x26A1; Quick Add Role</div>
-    <div class="form-group"><label class="form-label">Role Title * <span id="qa-cv-suggest" class="cv-suggest" style="display:none"></span></label><input type="text" id="qa-role" placeholder="e.g. Cyber Security PM" oninput="onQaRoleInput()"></div>
+    <div class="modal-title">⚡ Quick Add Role <span style="font-size:.8rem;font-weight:400;color:var(--text3)">— essentials only</span></div>
+    <div class="form-group">
+      <label class="form-label">Role Title * <span id="qa-cv-suggest" class="cv-suggest" style="display:none"></span></label>
+      <input type="text" id="qa-role" placeholder="e.g. Cyber Security PM" oninput="onQaRoleInput()">
+    </div>
     <div class="form-row">
       <div class="form-group"><label class="form-label">Company</label><input type="text" id="qa-company" placeholder="e.g. Barclays"></div>
       <div class="form-group"><label class="form-label">Agency</label><input type="text" id="qa-agency" placeholder="e.g. Hays"></div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">Day Rate (&pound;)</label><input type="text" id="qa-rate" placeholder="e.g. 600"></div>
-      <div class="form-group"><label class="form-label">Source</label><select id="qa-source"><option value="">Select&hellip;</option><option>JobServe</option><option>LinkedIn</option><option>CWJobs</option><option>Totaljobs</option><option>Reed</option><option>Indeed</option><option>ContractorUK</option><option>eFinancialCareers</option><option>CityJobs</option><option>Direct / Other</option></select></div>
+      <div class="form-group"><label class="form-label">Day Rate (£)</label><input type="text" id="qa-rate" placeholder="e.g. 600"></div>
+      <div class="form-group"><label class="form-label">Source</label>
+        <select id="qa-source">
+          <option value="">Select…</option>
+          <option>JobServe</option><option>LinkedIn</option><option>CWJobs</option><option>Totaljobs</option>
+          <option>Reed</option><option>Indeed</option><option>ContractorUK</option><option>eFinancialCareers</option>
+          <option>CityJobs</option><option>Direct / Other</option>
+        </select>
+      </div>
     </div>
-    <div class="form-group"><label class="form-label">Advert Link</label><input type="url" id="qa-link" placeholder="Paste URL here&hellip;"></div>
+    <div class="form-group"><label class="form-label">Advert Link</label><input type="url" id="qa-link" placeholder="Paste URL here…"></div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">CV Used</label><select id="qa-cv"><option value="">Select&hellip;</option><option>Cyber CV</option><option>IT PM CV</option></select></div>
-      <div class="form-group"><label class="form-label">Status</label><select id="qa-status"><option>Found</option><option>Applied</option><option>Recruiter contacted</option></select></div>
+      <div class="form-group"><label class="form-label">CV Used</label>
+        <select id="qa-cv"><option value="">Select…</option><option>Cyber CV</option><option>IT PM CV</option></select>
+      </div>
+      <div class="form-group"><label class="form-label">Status</label>
+        <select id="qa-status">
+          <option>Found</option><option>Applied</option><option>Recruiter contacted</option>
+        </select>
+      </div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">Priority</label><select id="qa-priority"><option>Medium</option><option>High</option><option>Low</option></select></div>
-      <div class="form-group"><label class="form-label">IR35</label><select id="qa-ir35"><option value="">Unknown</option><option>Inside IR35</option><option>Outside IR35</option></select></div>
+      <div class="form-group"><label class="form-label">Priority</label>
+        <select id="qa-priority"><option>Medium</option><option>High</option><option>Low</option></select>
+      </div>
+      <div class="form-group"><label class="form-label">IR35</label>
+        <select id="qa-ir35"><option value="">Unknown</option><option>Inside IR35</option><option>Outside IR35</option></select>
+      </div>
     </div>
-    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.6rem .85rem;font-size:.8rem;color:var(--text3);margin-bottom:.75rem">&#x1F4C5; Follow-up auto-set to 2 working days from today.</div>
-    <div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal('quick-add-modal')">Cancel</button><button class="btn btn-success" onclick="saveQuickAdd()">&#x26A1; Save Role</button></div>
+    <div style="background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:.6rem .85rem;font-size:.8rem;color:var(--text3);margin-bottom:.75rem">
+      📅 Follow-up date will be auto-set to <strong style="color:var(--text2)">2 working days from today</strong>.
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('quick-add-modal')">Cancel</button>
+      <button class="btn btn-success" onclick="saveQuickAdd()">⚡ Save Role</button>
+    </div>
   </div>
 </div>
 
+<!-- ==================== MODAL: STATUS CHANGE ==================== -->
 <div class="modal-overlay" id="status-modal">
   <div class="modal" style="max-width:360px">
     <div class="modal-title">Update Status</div>
     <div style="margin-bottom:.5rem;font-size:.9rem;color:var(--text2)" id="status-modal-role"></div>
-    <div class="form-group"><label class="form-label">New Status</label>
-      <select id="sm-status" style="font-size:1rem;padding:.65rem .85rem"><option>Found</option><option>Applied</option><option>Recruiter contacted</option><option>Call booked</option><option>Submitted to client</option><option>Interview booked</option><option>Awaiting feedback</option><option>Rejected</option><option>Offer</option><option>Closed</option></select>
+    <div class="form-group">
+      <label class="form-label">New Status</label>
+      <select id="sm-status" style="font-size:1rem;padding:.65rem .85rem">
+        <option>Found</option><option>Applied</option><option>Recruiter contacted</option>
+        <option>Call booked</option><option>Submitted to client</option><option>Interview booked</option>
+        <option>Awaiting feedback</option><option>Rejected</option><option>Offer</option><option>Closed</option>
+      </select>
     </div>
-    <div class="form-group"><label class="form-label">Update Follow-up Date (optional)</label><input type="date" id="sm-followup"></div>
-    <div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal('status-modal')">Cancel</button><button class="btn btn-primary" onclick="saveStatusChange()">Update</button></div>
+    <div class="form-group">
+      <label class="form-label">Update Follow-up Date (optional)</label>
+      <input type="date" id="sm-followup">
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('status-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveStatusChange()">Update</button>
+    </div>
   </div>
 </div>
 
+<!-- ==================== MODAL: PRIVACY CHECK ==================== -->
+<div class="modal-overlay" id="privacy-modal">
+  <div class="modal" style="max-width:780px">
+    <div class="modal-title">🔍 Privacy Check Results</div>
+    <div id="privacy-modal-body"></div>
+    <div class="modal-actions" id="privacy-modal-actions"></div>
+  </div>
+</div>
+
+<!-- ==================== MODAL: APPLICATION ==================== -->
 <div class="modal-overlay" id="app-modal">
   <div class="modal">
     <div class="modal-title" id="app-modal-title">New Application</div>
@@ -451,7 +625,14 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="form-group"><label class="form-label">Recruiter Name</label><input type="text" id="a-recname" placeholder="e.g. Sarah Jones"></div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">Job Board / Source</label><select id="a-source"><option value="">Select&hellip;</option><option>JobServe</option><option>LinkedIn</option><option>CWJobs</option><option>Totaljobs</option><option>Reed</option><option>Indeed</option><option>ContractorUK</option><option>eFinancialCareers</option><option>CityJobs</option><option>Direct / Other</option></select></div>
+      <div class="form-group"><label class="form-label">Job Board / Source</label>
+        <select id="a-source">
+          <option value="">Select…</option>
+          <option>JobServe</option><option>LinkedIn</option><option>CWJobs</option><option>Totaljobs</option>
+          <option>Reed</option><option>Indeed</option><option>ContractorUK</option><option>eFinancialCareers</option>
+          <option>CityJobs</option><option>Direct / Other</option>
+        </select>
+      </div>
       <div class="form-group"><label class="form-label">Advert Link</label><input type="url" id="a-link" placeholder="https://..."></div>
     </div>
     <div class="form-row">
@@ -459,27 +640,56 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="form-group"><label class="form-label">Date Applied</label><input type="date" id="a-dateapplied"></div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">CV Used <span id="a-cv-hint"></span></label><select id="a-cv"><option value="">Select&hellip;</option><option>Cyber CV</option><option>IT PM CV</option></select></div>
-      <div class="form-group"><label class="form-label">Role Type</label><select id="a-roletype"><option value="">Select&hellip;</option><option>Cyber / SecOps</option><option>IT PM</option><option>Infrastructure</option><option>Transformation</option><option>Financial Services</option><option>Other</option></select></div>
+      <div class="form-group"><label class="form-label">CV Used <span id="a-cv-hint"></span></label>
+        <select id="a-cv"><option value="">Select…</option><option>Cyber CV</option><option>IT PM CV</option></select>
+      </div>
+      <div class="form-group"><label class="form-label">Role Type</label>
+        <select id="a-roletype"><option value="">Select…</option>
+          <option>Cyber / SecOps</option><option>IT PM</option><option>Infrastructure</option>
+          <option>Transformation</option><option>Financial Services</option><option>Other</option>
+        </select>
+      </div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">Day Rate (&pound;)</label><input type="text" id="a-rate" placeholder="e.g. 600"></div>
-      <div class="form-group"><label class="form-label">IR35 Status</label><select id="a-ir35"><option value="">Select&hellip;</option><option>Inside IR35</option><option>Outside IR35</option><option>Unknown</option></select></div>
+      <div class="form-group"><label class="form-label">Day Rate (£)</label><input type="text" id="a-rate" placeholder="e.g. 600"></div>
+      <div class="form-group"><label class="form-label">IR35 Status</label>
+        <select id="a-ir35"><option value="">Select…</option>
+          <option>Inside IR35</option><option>Outside IR35</option><option>Unknown</option>
+        </select>
+      </div>
     </div>
     <div class="form-row">
       <div class="form-group"><label class="form-label">Location</label><input type="text" id="a-location" placeholder="e.g. London / Remote"></div>
-      <div class="form-group"><label class="form-label">Working Arrangement</label><select id="a-work"><option value="">Select&hellip;</option><option>Remote</option><option>Hybrid</option><option>Onsite</option></select></div>
+      <div class="form-group"><label class="form-label">Working Arrangement</label>
+        <select id="a-work"><option value="">Select…</option>
+          <option>Remote</option><option>Hybrid</option><option>Onsite</option>
+        </select>
+      </div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label class="form-label">Status</label><select id="a-status"><option>Found</option><option>Applied</option><option>Recruiter contacted</option><option>Call booked</option><option>Submitted to client</option><option>Interview booked</option><option>Awaiting feedback</option><option>Rejected</option><option>Offer</option><option>Closed</option></select></div>
-      <div class="form-group"><label class="form-label">Priority</label><select id="a-priority"><option>Medium</option><option>High</option><option>Low</option></select></div>
+      <div class="form-group"><label class="form-label">Status</label>
+        <select id="a-status">
+          <option>Found</option><option>Applied</option><option>Recruiter contacted</option>
+          <option>Call booked</option><option>Submitted to client</option><option>Interview booked</option>
+          <option>Awaiting feedback</option><option>Rejected</option><option>Offer</option><option>Closed</option>
+        </select>
+      </div>
+      <div class="form-group"><label class="form-label">Priority</label>
+        <select id="a-priority"><option>Medium</option><option>High</option><option>Low</option></select>
+      </div>
     </div>
     <div class="form-group"><label class="form-label">Follow-up Date</label><input type="date" id="a-followup"></div>
-    <div class="form-group"><label class="form-label">Notes <span style="color:var(--text3);font-weight:400">(public-safe only &mdash; no personal details)</span></label><textarea id="a-notes" placeholder="e.g. Strong match, hybrid 3 days London&hellip;"></textarea></div>
-    <div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal('app-modal')">Cancel</button><button class="btn btn-primary" onclick="saveApp()">Save Application</button></div>
+    <div class="form-group"><label class="form-label">Notes <span style="color:var(--text3);font-weight:400">(public-safe only — no personal details)</span></label>
+      <textarea id="a-notes" placeholder="e.g. Strong skills match, hybrid 3 days London…"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('app-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveApp()">Save Application</button>
+    </div>
   </div>
 </div>
 
+<!-- ==================== MODAL: RECRUITER ==================== -->
 <div class="modal-overlay" id="rec-modal">
   <div class="modal">
     <div class="modal-title" id="rec-modal-title">New Recruiter</div>
@@ -487,18 +697,30 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="form-group"><label class="form-label">Recruiter Name *</label><input type="text" id="r-name" placeholder="e.g. Sarah Jones"></div>
       <div class="form-group"><label class="form-label">Agency</label><input type="text" id="r-agency" placeholder="e.g. Hays Technology"></div>
     </div>
-    <div class="form-group"><label class="form-label">LinkedIn URL <span style="color:var(--text3);font-weight:400">(public profile only)</span></label><input type="url" id="r-linkedin" placeholder="https://linkedin.com/in/..."></div>
-    <div class="form-group"><label class="form-label">Specialist Area</label><input type="text" id="r-specialist" placeholder="e.g. Cyber Security, IT Project Management"></div>
+    <div class="form-group"><label class="form-label">LinkedIn URL <span style="color:var(--text3);font-weight:400">(public profile only)</span></label>
+      <input type="url" id="r-linkedin" placeholder="https://linkedin.com/in/...">
+    </div>
+    <div class="form-group"><label class="form-label">Specialist Area</label>
+      <input type="text" id="r-specialist" placeholder="e.g. Cyber Security, IT Project Management">
+    </div>
     <div class="form-row">
       <div class="form-group"><label class="form-label">Last Contacted</label><input type="date" id="r-lastcontact"></div>
       <div class="form-group"><label class="form-label">Next Follow-up Date</label><input type="date" id="r-nextfollowup"></div>
     </div>
-    <div class="form-group"><label class="form-label">Roles Discussed</label><input type="text" id="r-roles" placeholder="e.g. Cyber PM roles, London hybrid"></div>
-    <div class="form-group"><label class="form-label">Notes <span style="color:var(--text3);font-weight:400">(no private contact details)</span></label><textarea id="r-notes" placeholder="e.g. Covers FS sector, responsive&hellip;"></textarea></div>
-    <div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal('rec-modal')">Cancel</button><button class="btn btn-primary" onclick="saveRec()">Save Recruiter</button></div>
+    <div class="form-group"><label class="form-label">Roles Discussed</label>
+      <input type="text" id="r-roles" placeholder="e.g. Cyber PM roles, London hybrid">
+    </div>
+    <div class="form-group"><label class="form-label">Notes <span style="color:var(--text3);font-weight:400">(no private contact details)</span></label>
+      <textarea id="r-notes" placeholder="e.g. Covers FS sector, responsive…"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('rec-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveRec()">Save Recruiter</button>
+    </div>
   </div>
 </div>
 
+<!-- ==================== MODAL: DAILY LOG ==================== -->
 <div class="modal-overlay" id="daily-modal">
   <div class="modal">
     <div class="modal-title">Log Daily Activity</div>
@@ -512,27 +734,38 @@ tr:hover td{background:rgba(255,255,255,.02)}
       <div class="form-group"><label class="form-label">Calls Booked</label><input type="number" id="d-calls" min="0" value="0"></div>
     </div>
     <div class="form-group"><label class="form-label">Interviews Booked</label><input type="number" id="d-interviews" min="0" value="0"></div>
-    <div class="form-group"><label class="form-label">Notes</label><textarea id="d-notes" placeholder="Key activity today&hellip;"></textarea></div>
-    <div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal('daily-modal')">Cancel</button><button class="btn btn-primary" onclick="saveDaily()">Save Log</button></div>
+    <div class="form-group"><label class="form-label">Notes</label>
+      <textarea id="d-notes" placeholder="Key activity today…"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('daily-modal')">Cancel</button>
+      <button class="btn btn-primary" onclick="saveDaily()">Save Log</button>
+    </div>
   </div>
 </div>
 
+<!-- ==================== MODAL: VIEW APPLICATION ==================== -->
 <div class="modal-overlay" id="view-app-modal">
   <div class="modal" style="max-width:750px">
     <div class="modal-title" id="view-app-title">Application Detail</div>
     <div id="view-app-body" style="font-size:.9rem;line-height:1.8;color:var(--text2)"></div>
-    <div class="modal-actions"><button class="btn btn-ghost" onclick="closeModal('view-app-modal')">Close</button><button class="btn btn-primary" id="view-app-edit-btn">Edit</button></div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeModal('view-app-modal')">Close</button>
+      <button class="btn btn-primary" id="view-app-edit-btn">Edit</button>
+    </div>
   </div>
 </div>
 
 <script>
 // =====================================================================
-// DATA
+// DATA — stored in localStorage only, nothing sent anywhere
 // =====================================================================
 let apps  = JSON.parse(localStorage.getItem('jsd_apps')  || '[]');
 let recs  = JSON.parse(localStorage.getItem('jsd_recs')  || '[]');
 let daily = JSON.parse(localStorage.getItem('jsd_daily') || '[]');
-let editAppId=null, editRecId=null, editDailyId=null;
+let editAppId   = null;
+let editRecId   = null;
+let editDailyId = null;
 
 function save(){
   localStorage.setItem('jsd_apps',  JSON.stringify(apps));
@@ -542,13 +775,15 @@ function save(){
 function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2); }
 
 // =====================================================================
-// NAV
+// NAVIGATION
 // =====================================================================
 function showPage(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('page-'+id).classList.add('active');
-  document.querySelectorAll('.nav-tab').forEach(t=>{ if(t.getAttribute('onclick')===`showPage('${id}')`) t.classList.add('active'); });
+  document.querySelectorAll('.nav-tab').forEach(t=>{
+    if(t.getAttribute('onclick')===`showPage('${id}')`) t.classList.add('active');
+  });
   if(id==='dashboard')    renderDashboard();
   if(id==='applications'){ populateAgencyFilter(); renderApps(); }
   if(id==='recruiters'){   populateRecAgencyFilter(); renderRecs(); }
@@ -561,9 +796,21 @@ function showPage(id){
 // DATE HELPERS
 // =====================================================================
 function todayStr(){ return new Date().toISOString().split('T')[0]; }
-function weekStart(){ const d=new Date(),day=d.getDay(),diff=day===0?-6:1-day; d.setDate(d.getDate()+diff); return d.toISOString().split('T')[0]; }
-function fmtDate(s){ if(!s) return '&mdash;'; const d=new Date(s+'T00:00:00'); return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit'}); }
-function addWorkingDays(dateStr,days){ const d=new Date(dateStr+'T00:00:00'); let added=0; while(added<days){ d.setDate(d.getDate()+1); const dow=d.getDay(); if(dow!==0&&dow!==6) added++; } return d.toISOString().split('T')[0]; }
+function weekStart(){
+  const d=new Date(); const day=d.getDay(); const diff=day===0?-6:1-day;
+  d.setDate(d.getDate()+diff); return d.toISOString().split('T')[0];
+}
+function fmtDate(s){
+  if(!s) return '—';
+  const d=new Date(s+'T00:00:00');
+  return d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'2-digit'});
+}
+function addWorkingDays(dateStr,days){
+  const d=new Date(dateStr+'T00:00:00');
+  let added=0;
+  while(added<days){ d.setDate(d.getDate()+1); const dow=d.getDay(); if(dow!==0&&dow!==6) added++; }
+  return d.toISOString().split('T')[0];
+}
 
 // =====================================================================
 // DASHBOARD
@@ -572,98 +819,129 @@ function renderDashboard(){
   const today=todayStr(), wStart=weekStart();
   document.getElementById('dash-date').textContent=new Date().toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   renderAttentionStrip();
+
   const APPLIED=['Applied','Recruiter contacted','Call booked','Submitted to client','Interview booked','Awaiting feedback','Offer'];
   const ACTIVE=[...APPLIED,'Found'];
-  const rolesFound=apps.filter(a=>a.status==='Found').length;
-  const totalApplied=apps.filter(a=>APPLIED.includes(a.status)).length;
-  const appliedThisWeek=apps.filter(a=>APPLIED.includes(a.status)&&a.dateApplied&&a.dateApplied>=wStart).length;
-  const cyberApplied=apps.filter(a=>a.roleType==='Cyber / SecOps'&&APPLIED.includes(a.status)).length;
-  const itpmApplied=apps.filter(a=>a.roleType==='IT PM'&&APPLIED.includes(a.status)).length;
-  const followupsDueToday=apps.filter(a=>a.followup===today&&ACTIVE.includes(a.status)).length;
-  const overdueFollowups=apps.filter(a=>a.followup&&a.followup<today&&ACTIVE.includes(a.status)).length;
-  const interviewsBooked=apps.filter(a=>a.status==='Interview booked').length;
-  const awaitingFeedback=apps.filter(a=>a.status==='Awaiting feedback').length;
-  const highPriority=apps.filter(a=>a.priority==='High'&&ACTIVE.includes(a.status)).length;
+
+  const rolesFound        = apps.filter(a=>a.status==='Found').length;
+  const totalApplied      = apps.filter(a=>APPLIED.includes(a.status)).length;
+  const appliedThisWeek   = apps.filter(a=>APPLIED.includes(a.status)&&a.dateApplied&&a.dateApplied>=wStart).length;
+  const cyberApplied      = apps.filter(a=>a.roleType==='Cyber / SecOps'&&APPLIED.includes(a.status)).length;
+  const itpmApplied       = apps.filter(a=>a.roleType==='IT PM'&&APPLIED.includes(a.status)).length;
+  const followupsDueToday = apps.filter(a=>a.followup===today&&ACTIVE.includes(a.status)).length;
+  const overdueFollowups  = apps.filter(a=>a.followup&&a.followup<today&&ACTIVE.includes(a.status)).length;
+  const interviewsBooked  = apps.filter(a=>a.status==='Interview booked').length;
+  const awaitingFeedback  = apps.filter(a=>a.status==='Awaiting feedback').length;
+  const highPriority      = apps.filter(a=>a.priority==='High'&&ACTIVE.includes(a.status)).length;
+
   function statCard(val,label,color,clickFn,subtitle){
-    const hint=val>0&&clickFn?`<div style="font-size:.7rem;color:var(--text3);margin-top:.3rem">tap to view &rarr;</div>`:'';
+    const hint=val>0&&clickFn?`<div style="font-size:.7rem;color:var(--text3);margin-top:.3rem">tap to view →</div>`:'';
     return `<div class="card" style="border-left:3px solid ${color};${clickFn?'cursor:pointer':''};transition:transform .1s"
       ${clickFn?`onclick="${clickFn}" onmouseenter="this.style.transform='translateY(-2px)'" onmouseleave="this.style.transform=''"`:''}>
       <div class="stat-value" style="color:${color}">${val}</div>
       <div class="stat-label">${label}</div>
-      ${subtitle?`<div style="font-size:.7rem;color:var(--text3);margin-top:.1rem">${subtitle}</div>`:''}${hint}</div>`;
+      ${subtitle?`<div style="font-size:.7rem;color:var(--text3);margin-top:.1rem">${subtitle}</div>`:''}
+      ${hint}
+    </div>`;
   }
+
   document.getElementById('dash-stats').innerHTML=
-    statCard(rolesFound,'Roles Saved (not yet applied)','var(--text3)',`filterAndGo('status','Found')`,'')+
-    statCard(totalApplied,'Applied / In Progress','var(--accent)',`filterAndGo('status','Applied')`,'')+
-    statCard(appliedThisWeek,'Applied This Week','var(--success)',`filterAndGo('week','')`,'')+
-    statCard(cyberApplied,'Cyber / SecOps Applied','var(--info)',`filterAndGo('roletype','Cyber / SecOps')`,'')+
-    statCard(itpmApplied,'IT PM Applied','var(--accent2)',`filterAndGo('roletype','IT PM')`,'')+
-    statCard(followupsDueToday,'Follow-ups Due Today','var(--warn)',`filterAndGo('duetoday','')`,overdueFollowups>0?`+ ${overdueFollowups} overdue`:'')+
-    statCard(interviewsBooked,'Interviews Booked','var(--success)',`filterAndGo('status','Interview booked')`,'')+
-    statCard(awaitingFeedback,'Awaiting Feedback','var(--warn)',`filterAndGo('status','Awaiting feedback')`,'')+
-    statCard(highPriority,'High Priority','var(--danger)',`filterAndGo('priority','High')`,'')+
-    statCard(recs.length,'Recruiters Tracked','var(--success)',`showPage('recruiters')`,'');
+    statCard(rolesFound,      'Roles Saved (not yet applied)', 'var(--text3)',   `filterAndGo('status','Found')`,            '')+
+    statCard(totalApplied,    'Applied / In Progress',         'var(--accent)',  `filterAndGo('status','Applied')`,          '')+
+    statCard(appliedThisWeek, 'Applied This Week',             'var(--success)', `filterAndGo('week','')`,                   '')+
+    statCard(cyberApplied,    'Cyber / SecOps Applied',        'var(--info)',    `filterAndGo('roletype','Cyber / SecOps')`, '')+
+    statCard(itpmApplied,     'IT PM Applied',                 'var(--accent2)', `filterAndGo('roletype','IT PM')`,          '')+
+    statCard(followupsDueToday,'Follow-ups Due Today',         'var(--warn)',    `filterAndGo('duetoday','')`,               overdueFollowups>0?`+ ${overdueFollowups} overdue`:'')+
+    statCard(interviewsBooked, 'Interviews Booked',            'var(--success)', `filterAndGo('status','Interview booked')`, '')+
+    statCard(awaitingFeedback, 'Awaiting Feedback',            'var(--warn)',    `filterAndGo('status','Awaiting feedback')`,'')+
+    statCard(highPriority,     'High Priority',                'var(--danger)',  `filterAndGo('priority','High')`,           '')+
+    statCard(recs.length,      'Recruiters Tracked',           'var(--success)', `showPage('recruiters')`,                   '');
+
+  // Progress bars
   const todayLog=daily.filter(d=>d.date===today);
-  const tA=todayLog.reduce((a,d)=>a+parseInt(d.apps||0),0);
-  const tR=todayLog.reduce((a,d)=>a+parseInt(d.recs||0),0);
-  const tF=todayLog.reduce((a,d)=>a+parseInt(d.fu||0),0);
-  setProgress('prog-apps-today',tA,8,`${tA}/8`,'prog-apps-today-val');
-  setProgress('prog-rec-today',tR,10,`${tR}/10`,'prog-rec-today-val');
-  setProgress('prog-fu-today',followupsDueToday>0?tF:1,followupsDueToday||1,`${tF} done`,'prog-fu-today-val');
-  const wL=daily.filter(d=>d.date>=wStart);
-  const wA=wL.reduce((a,d)=>a+parseInt(d.apps||0),0);
-  const wR=wL.reduce((a,d)=>a+parseInt(d.recs||0),0);
-  const wC=wL.reduce((a,d)=>a+parseInt(d.calls||0),0);
-  setProgress('prog-apps-week',wA,35,`${wA}/35`,'prog-apps-week-val');
-  setProgress('prog-rec-week',wR,40,`${wR}/40`,'prog-rec-week-val');
-  setProgress('prog-calls-week',wC,5,`${wC}/5`,'prog-calls-week-val');
-  const fuDue=apps.filter(a=>a.followup&&a.followup<=today&&!['Rejected','Closed','Offer'].includes(a.status)).sort((a,b)=>a.followup.localeCompare(b.followup));
-  document.getElementById('dash-followups').innerHTML=fuDue.length?fuDue.map(a=>`<div class="action-item ${a.followup<today?'overdue':'due-today'}"><div><div style="font-weight:600;font-size:.88rem">${esc(a.role)}${a.company?' @ '+esc(a.company):''}</div><div style="font-size:.78rem;color:var(--text3)">${esc(a.agency||'')} &middot; Follow-up: ${fmtDate(a.followup)} ${a.followup<today?'<span style="color:var(--danger);font-weight:600">OVERDUE</span>':''}</div></div><span class="badge status-${cssStatus(a.status)}">${a.status}</span></div>`).join(''):'<p style="color:var(--text3);font-size:.85rem">No follow-ups due today.</p>';
+  const todayApps=todayLog.reduce((a,d)=>a+parseInt(d.apps||0),0);
+  const todayRecs=todayLog.reduce((a,d)=>a+parseInt(d.recs||0),0);
+  const todayFU  =todayLog.reduce((a,d)=>a+parseInt(d.fu||0),0);
+  setProgress('prog-apps-today',todayApps,8,`${todayApps}/8`,'prog-apps-today-val');
+  setProgress('prog-rec-today', todayRecs,10,`${todayRecs}/10`,'prog-rec-today-val');
+  setProgress('prog-fu-today',followupsDueToday>0?todayFU:1,followupsDueToday||1,`${todayFU} done`,'prog-fu-today-val');
+
+  const weekLogs=daily.filter(d=>d.date>=wStart);
+  const weekApps =weekLogs.reduce((a,d)=>a+parseInt(d.apps||0),0);
+  const weekRecs =weekLogs.reduce((a,d)=>a+parseInt(d.recs||0),0);
+  const weekCalls=weekLogs.reduce((a,d)=>a+parseInt(d.calls||0),0);
+  setProgress('prog-apps-week', weekApps, 35,`${weekApps}/35`, 'prog-apps-week-val');
+  setProgress('prog-rec-week',  weekRecs, 40,`${weekRecs}/40`, 'prog-rec-week-val');
+  setProgress('prog-calls-week',weekCalls,5, `${weekCalls}/5`, 'prog-calls-week-val');
+
+  // Follow-ups
+  const fuDue=apps.filter(a=>a.followup&&a.followup<=today&&!['Rejected','Closed','Offer'].includes(a.status))
+                  .sort((a,b)=>a.followup.localeCompare(b.followup));
+  document.getElementById('dash-followups').innerHTML=fuDue.length?fuDue.map(a=>`
+    <div class="action-item ${a.followup<today?'overdue':'due-today'}">
+      <div>
+        <div style="font-weight:600;font-size:.88rem">${esc(a.role)}${a.company?' @ '+esc(a.company):''}</div>
+        <div style="font-size:.78rem;color:var(--text3)">${esc(a.agency||'')} · Follow-up: ${fmtDate(a.followup)} ${a.followup<today?'<span style="color:var(--danger);font-weight:600">OVERDUE</span>':''}</div>
+      </div>
+      <span class="badge status-${cssStatus(a.status)}">${a.status}</span>
+    </div>`).join(''):'<p style="color:var(--text3);font-size:.85rem">No follow-ups due today.</p>';
+
+  // High priority
   const hi=apps.filter(a=>a.priority==='High'&&!['Rejected','Closed'].includes(a.status));
-  document.getElementById('dash-highpriority').innerHTML=hi.length?hi.map(a=>`<div class="action-item"><div><div style="font-weight:600;font-size:.88rem">${esc(a.role)}</div><div style="font-size:.78rem;color:var(--text3)">${esc(a.company||'')} &middot; ${esc(a.agency||'')}</div></div><span class="badge status-${cssStatus(a.status)}">${a.status}</span></div>`).join(''):'<p style="color:var(--text3);font-size:.85rem">No high-priority roles.</p>';
+  document.getElementById('dash-highpriority').innerHTML=hi.length?hi.map(a=>`
+    <div class="action-item">
+      <div>
+        <div style="font-weight:600;font-size:.88rem">${esc(a.role)}</div>
+        <div style="font-size:.78rem;color:var(--text3)">${esc(a.company||'')} · ${esc(a.agency||'')}</div>
+      </div>
+      <span class="badge status-${cssStatus(a.status)}">${a.status}</span>
+    </div>`).join(''):'<p style="color:var(--text3);font-size:.85rem">No high-priority roles.</p>';
+
+  // Awaiting feedback
   const af=apps.filter(a=>a.status==='Awaiting feedback');
-  document.getElementById('dash-awaiting').innerHTML=af.length?`<div class="table-wrap"><table style="font-size:.83rem"><thead><tr><th>Role</th><th>Company</th><th>Agency</th><th>Applied</th></tr></thead><tbody>${af.map(a=>`<tr><td>${esc(a.role)}</td><td>${esc(a.company||'')}</td><td>${esc(a.agency||'')}</td><td>${fmtDate(a.dateApplied)}</td></tr>`).join('')}</tbody></table></div>`:'<p style="color:var(--text3);font-size:.85rem">None awaiting feedback.</p>';
+  document.getElementById('dash-awaiting').innerHTML=af.length
+    ?`<div class="table-wrap"><table style="font-size:.83rem"><thead><tr><th>Role</th><th>Company</th><th>Agency</th><th>Applied</th></tr></thead><tbody>
+       ${af.map(a=>`<tr><td>${esc(a.role)}</td><td>${esc(a.company||'')}</td><td>${esc(a.agency||'')}</td><td>${fmtDate(a.dateApplied)}</td></tr>`).join('')}
+      </tbody></table></div>`
+    :'<p style="color:var(--text3);font-size:.85rem">None awaiting feedback.</p>';
 }
+
 function filterAndGo(type,val){
-  ['app-search'].forEach(id=>document.getElementById(id).value='');
-  ['f-status','f-cv','f-roletype','f-ir35','f-priority','f-agency'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('app-search').value='';
+  document.getElementById('f-status').value='';
+  document.getElementById('f-cv').value='';
+  document.getElementById('f-roletype').value='';
+  document.getElementById('f-ir35').value='';
+  document.getElementById('f-priority').value='';
+  document.getElementById('f-agency').value='';
   document.getElementById('f-duetoday').checked=false;
   if(type==='status')   document.getElementById('f-status').value=val;
   if(type==='roletype') document.getElementById('f-roletype').value=val;
   if(type==='priority') document.getElementById('f-priority').value=val;
   if(type==='duetoday') document.getElementById('f-duetoday').checked=true;
   if(type==='week')     window._filterThisWeek=true;
-  populateAgencyFilter(); showPage('applications'); renderApps();
+  populateAgencyFilter();
+  showPage('applications');
+  renderApps();
 }
+
 function clearAppFilters(){
   document.getElementById('app-search').value='';
-  ['f-status','f-cv','f-roletype','f-ir35','f-priority','f-agency'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('f-status').value='';
+  document.getElementById('f-cv').value='';
+  document.getElementById('f-roletype').value='';
+  document.getElementById('f-ir35').value='';
+  document.getElementById('f-priority').value='';
+  document.getElementById('f-agency').value='';
   document.getElementById('f-duetoday').checked=false;
-  window._filterThisWeek=false; renderApps();
+  window._filterThisWeek=false;
+  renderApps();
 }
+
 function setProgress(barId,val,max,label,labelId){
   const pct=max>0?Math.min(100,Math.round(val/max*100)):0;
   document.getElementById(barId).style.width=pct+'%';
   document.getElementById(labelId).textContent=label;
-}
-function renderAttentionStrip(){
-  const today=todayStr();
-  const ACTIVE=['Applied','Recruiter contacted','Call booked','Submitted to client','Interview booked','Awaiting feedback','Found'];
-  const overdue=apps.filter(a=>a.followup&&a.followup<today&&ACTIVE.includes(a.status)).length;
-  const dueToday=apps.filter(a=>a.followup===today&&ACTIVE.includes(a.status)).length;
-  const toApply=apps.filter(a=>a.status==='Found').length;
-  const interviews=apps.filter(a=>a.status==='Interview booked').length;
-  const awaiting=apps.filter(a=>a.status==='Awaiting feedback').length;
-  const el=document.getElementById('dash-attention'); if(!el) return;
-  const items=[];
-  if(overdue>0)    items.push(`<span class="attention-pill" onclick="filterAndGo('duetoday','')" style="color:var(--danger);cursor:pointer">&#x1F534; ${overdue} OVERDUE follow-up${overdue>1?'s':''}</span>`);
-  if(dueToday>0)   items.push(`<span class="attention-pill" onclick="filterAndGo('duetoday','')" style="color:var(--warn);cursor:pointer">&#x1F7E1; ${dueToday} follow-up${dueToday>1?'s':''} due today</span>`);
-  if(interviews>0) items.push(`<span class="attention-pill" onclick="filterAndGo('status','Interview booked')" style="color:var(--success);cursor:pointer">&#x1F7E2; ${interviews} interview${interviews>1?'s':''} booked</span>`);
-  if(awaiting>0)   items.push(`<span class="attention-pill" onclick="filterAndGo('status','Awaiting feedback')" style="color:var(--warn);cursor:pointer">&#x1F7E0; ${awaiting} awaiting feedback</span>`);
-  if(toApply>0)    items.push(`<span class="attention-pill" onclick="filterAndGo('status','Found')" style="color:var(--text2);cursor:pointer">&#x26AA; ${toApply} saved role${toApply>1?'s':''} &mdash; ready to apply</span>`);
-  el.innerHTML=items.length
-    ?`<div class="attention-strip ${overdue>0?'':'warn'}"><span style="font-weight:700;font-size:.85rem;color:var(--text)">&#x26A1; Action needed</span>${items.join('')}<span style="font-size:.7rem;color:var(--text3);margin-left:.25rem">tap to view</span></div>`
-    :`<div class="attention-strip warn" style="border-color:var(--success);background:linear-gradient(135deg,#1c3a28,#1a2e22)"><span style="font-weight:700;font-size:.85rem;color:var(--success)">&#x2705; All up to date &mdash; great work!</span></div>`;
 }
 
 // =====================================================================
@@ -673,11 +951,11 @@ function openAppModal(id){
   editAppId=id||null;
   const a=id?apps.find(x=>x.id===id):{};
   document.getElementById('app-modal-title').textContent=id?'Edit Application':'New Application';
-  ['role','company','agency','recname','link','datefound','dateapplied','rate','location','followup','notes'].forEach(f=>document.getElementById('a-'+f).value=a[f.replace('name','Name').replace('date','Date').replace('found','Found').replace('applied','Applied')]||a[f]||'');
   document.getElementById('a-role').value=a.role||'';
   document.getElementById('a-company').value=a.company||'';
   document.getElementById('a-agency').value=a.agency||'';
   document.getElementById('a-recname').value=a.recName||'';
+  document.getElementById('a-source').value=a.source||'';
   document.getElementById('a-link').value=a.link||'';
   document.getElementById('a-datefound').value=a.dateFound||'';
   document.getElementById('a-dateapplied').value=a.dateApplied||'';
@@ -687,45 +965,87 @@ function openAppModal(id){
   document.getElementById('a-ir35').value=a.ir35||'';
   document.getElementById('a-location').value=a.location||'';
   document.getElementById('a-work').value=a.work||'';
-  document.getElementById('a-source').value=a.source||'';
   document.getElementById('a-status').value=a.status||'Found';
   document.getElementById('a-priority').value=a.priority||'Medium';
   document.getElementById('a-followup').value=a.followup||'';
   document.getElementById('a-notes').value=a.notes||'';
   openModal('app-modal');
 }
+
 function saveApp(){
   const role=document.getElementById('a-role').value.trim();
   if(!role){ toast('Please enter a role title','err'); return; }
-  const obj={id:editAppId||uid(),role,company:v('a-company'),agency:v('a-agency'),recName:v('a-recname'),source:v('a-source'),link:v('a-link'),dateFound:v('a-datefound'),dateApplied:v('a-dateapplied'),cv:v('a-cv'),roleType:v('a-roletype'),rate:v('a-rate'),ir35:v('a-ir35'),location:v('a-location'),work:v('a-work'),status:v('a-status'),priority:v('a-priority'),followup:v('a-followup'),notes:v('a-notes')};
-  if(editAppId){ const i=apps.findIndex(x=>x.id===editAppId); apps[i]=obj; } else apps.unshift(obj);
+  const obj={
+    id:editAppId||uid(), role,
+    company:v('a-company'), agency:v('a-agency'), recName:v('a-recname'),
+    source:v('a-source'),   link:v('a-link'),
+    dateFound:v('a-datefound'), dateApplied:v('a-dateapplied'),
+    cv:v('a-cv'), roleType:v('a-roletype'), rate:v('a-rate'), ir35:v('a-ir35'),
+    location:v('a-location'), work:v('a-work'),
+    status:v('a-status'), priority:v('a-priority'),
+    followup:v('a-followup'), notes:v('a-notes')
+  };
+  if(editAppId){ const i=apps.findIndex(x=>x.id===editAppId); apps[i]=obj; }
+  else apps.unshift(obj);
   save(); closeModal('app-modal'); populateAgencyFilter(); renderApps();
   toast(editAppId?'Application updated':'Application saved');
 }
-function deleteApp(id){ if(!confirm('Delete this application?')) return; apps=apps.filter(a=>a.id!==id); save(); renderApps(); toast('Deleted'); }
+
+function deleteApp(id){
+  if(!confirm('Delete this application?')) return;
+  apps=apps.filter(a=>a.id!==id); save(); renderApps(); toast('Deleted');
+}
+
 function viewApp(id){
   const a=apps.find(x=>x.id===id); if(!a) return;
-  document.getElementById('view-app-title').textContent=a.role+(a.company?' &mdash; '+a.company:'');
-  document.getElementById('view-app-body').innerHTML=`<div class="grid-2"><div>${row('Agency',a.agency)}${row('Recruiter',a.recName)}${row('Source',a.source)}${a.link?`<div style="margin:.3rem 0"><span style="color:var(--text3)">Advert: </span><a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">${esc(a.link.slice(0,60))}&hellip;</a></div>`:''}</div><div>${row('Status',`<span class="badge status-${cssStatus(a.status)}">${a.status}</span>`)}${row('Priority',`<span class="badge priority-${a.priority||'Medium'}">${a.priority||'&mdash;'}</span>`)}${row('CV',a.cv)}${row('Role Type',a.roleType)}${row('Day Rate',a.rate?'&pound;'+a.rate:'')}${row('IR35',a.ir35)}${row('Location',a.location)}${row('Working',a.work)}${row('Date Found',fmtDate(a.dateFound))}${row('Date Applied',fmtDate(a.dateApplied))}${row('Follow-up',fmtDate(a.followup))}</div></div>${a.notes?`<div style="margin-top:.75rem">${row('Notes',esc(a.notes))}</div>`:''}`;
+  document.getElementById('view-app-title').textContent=a.role+(a.company?' — '+a.company:'');
+  document.getElementById('view-app-body').innerHTML=`
+    <div class="grid-2">
+      <div>
+        ${row('Agency',a.agency)}
+        ${row('Recruiter',a.recName)}
+        ${row('Source',a.source)}
+        ${a.link?`<div style="margin:.3rem 0"><span style="color:var(--text3)">Advert: </span><a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer">${esc(a.link.slice(0,60))}…</a></div>`:''}
+      </div>
+      <div>
+        ${row('Status',`<span class="badge status-${cssStatus(a.status)}">${a.status}</span>`)}
+        ${row('Priority',`<span class="badge priority-${a.priority||'Medium'}">${a.priority||'—'}</span>`)}
+        ${row('CV',a.cv)}
+        ${row('Role Type',a.roleType)}
+        ${row('Day Rate',a.rate?'£'+a.rate:'')}
+        ${row('IR35',a.ir35)}
+        ${row('Location',a.location)}
+        ${row('Working',a.work)}
+        ${row('Date Found',fmtDate(a.dateFound))}
+        ${row('Date Applied',fmtDate(a.dateApplied))}
+        ${row('Follow-up',fmtDate(a.followup))}
+      </div>
+    </div>
+    ${a.notes?`<div style="margin-top:.75rem">${row('Notes',esc(a.notes))}</div>`:''}`;
   document.getElementById('view-app-edit-btn').onclick=()=>{ closeModal('view-app-modal'); openAppModal(id); };
   openModal('view-app-modal');
 }
+
 function row(label,val){ return val?`<div style="margin:.25rem 0"><span style="color:var(--text3)">${label}: </span>${val}</div>`:''; }
+
 function renderApps(){
   const search=(document.getElementById('app-search').value||'').toLowerCase();
-  const fStatus=document.getElementById('f-status').value;
-  const fCv=document.getElementById('f-cv').value;
+  const fStatus  =document.getElementById('f-status').value;
+  const fCv      =document.getElementById('f-cv').value;
   const fRoleType=document.getElementById('f-roletype').value;
-  const fIR35=document.getElementById('f-ir35').value;
+  const fIR35    =document.getElementById('f-ir35').value;
   const fPriority=document.getElementById('f-priority').value;
-  const fAgency=document.getElementById('f-agency').value;
-  const fDue=document.getElementById('f-duetoday').checked;
-  const fWeek=window._filterThisWeek||false; if(fWeek) window._filterThisWeek=false;
+  const fAgency  =document.getElementById('f-agency').value;
+  const fDue     =document.getElementById('f-duetoday').checked;
+  const fWeek    =window._filterThisWeek||false;
+  if(fWeek) window._filterThisWeek=false;
   const today=todayStr(), wStart=weekStart();
   const APPLIED=['Applied','Recruiter contacted','Call booked','Submitted to client','Interview booked','Awaiting feedback','Offer'];
+
   const filtered=apps.filter(a=>{
     if(search&&![a.role,a.company,a.agency,a.recName,a.notes].join(' ').toLowerCase().includes(search)) return false;
-    if(fStatus==='Applied'){ if(!APPLIED.includes(a.status)) return false; } else if(fStatus&&a.status!==fStatus) return false;
+    if(fStatus==='Applied'){ if(!APPLIED.includes(a.status)) return false; }
+    else if(fStatus&&a.status!==fStatus) return false;
     if(fCv&&a.cv!==fCv) return false;
     if(fRoleType&&a.roleType!==fRoleType) return false;
     if(fIR35&&a.ir35!==fIR35) return false;
@@ -735,20 +1055,60 @@ function renderApps(){
     if(fWeek&&!(APPLIED.includes(a.status)&&a.dateApplied&&a.dateApplied>=wStart)) return false;
     return true;
   });
+
   const activeFilters=[];
-  if(fStatus) activeFilters.push(fStatus==='Applied'?'Applied / In Progress':fStatus);
+  if(fStatus)   activeFilters.push(fStatus==='Applied'?'Applied / In Progress':fStatus);
   if(fRoleType) activeFilters.push(fRoleType);
   if(fPriority) activeFilters.push(fPriority+' priority');
-  if(fCv) activeFilters.push(fCv);
-  if(fDue) activeFilters.push('Follow-up due today');
-  if(fAgency) activeFilters.push(fAgency);
+  if(fCv)       activeFilters.push(fCv);
+  if(fDue)      activeFilters.push('Follow-up due today');
+  if(fAgency)   activeFilters.push(fAgency);
   const banner=document.getElementById('apps-filter-banner');
-  if(banner){ if(activeFilters.length){ banner.innerHTML=`<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:.45rem .85rem;margin-bottom:.75rem;font-size:.82rem;color:var(--text2);display:flex;align-items:center;gap:.5rem;flex-wrap:wrap"><span>&#x1F50D; Showing:</span>${activeFilters.map(f=>`<span style="background:var(--accent);color:#fff;border-radius:999px;padding:.1rem .55rem;font-size:.75rem;font-weight:600">${esc(f)}</span>`).join('')}<button onclick="clearAppFilters()" style="margin-left:auto;background:none;border:1px solid var(--border);border-radius:6px;padding:.1rem .5rem;font-size:.75rem;color:var(--text2);cursor:pointer">&times; Clear</button></div>`; banner.style.display='block'; } else banner.style.display='none'; }
-  document.getElementById('apps-tbody').innerHTML=filtered.map(a=>`<tr><td style="min-width:160px"><div style="font-weight:600;font-size:.85rem">${esc(a.role)}</div>${a.link?`<a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer" class="quick-advert-btn" style="margin-top:.3rem;text-decoration:none">&#x1F517; Advert &#x2197;</a>`:''}</td><td>${esc(a.company||'')}</td><td>${esc(a.agency||'')}</td><td><span class="badge status-${cssStatus(a.status)}" onclick="openStatusModal('${a.id}')" style="cursor:pointer">${a.status} &#x25BE;</span></td><td style="font-size:.78rem;color:var(--text2)">${a.cv||'&mdash;'}</td><td><span class="badge priority-${a.priority||'Medium'}">${a.priority||'&mdash;'}</span></td><td>${a.rate?'&pound;'+a.rate:''}</td><td style="font-size:.78rem">${a.ir35||'&mdash;'}</td><td style="white-space:nowrap">${fmtDate(a.dateApplied)}</td><td style="white-space:nowrap;${a.followup&&a.followup<today?'color:var(--danger);font-weight:600':''}">${fmtDate(a.followup)}</td><td><div class="td-actions"><button class="btn btn-icon btn-sm" onclick="viewApp('${a.id}')" title="View">&#x1F441;</button><button class="btn btn-icon btn-sm" onclick="openAppModal('${a.id}')" title="Edit">&#x270F;&#xFE0F;</button><button class="btn btn-icon btn-sm" onclick="deleteApp('${a.id}')" title="Delete">&#x1F5D1;</button></div></td></tr>`).join('');
+  if(banner){
+    if(activeFilters.length){
+      banner.innerHTML=`<div style="background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:.45rem .85rem;margin-bottom:.75rem;font-size:.82rem;color:var(--text2);display:flex;align-items:center;gap:.5rem;flex-wrap:wrap">
+        <span>🔍 Showing:</span>
+        ${activeFilters.map(f=>`<span style="background:var(--accent);color:#fff;border-radius:999px;padding:.1rem .55rem;font-size:.75rem;font-weight:600">${esc(f)}</span>`).join('')}
+        <button onclick="clearAppFilters()" style="margin-left:auto;background:none;border:1px solid var(--border);border-radius:6px;padding:.1rem .5rem;font-size:.75rem;color:var(--text2);cursor:pointer">✕ Clear</button>
+      </div>`;
+      banner.style.display='block';
+    } else { banner.style.display='none'; }
+  }
+
+  const tbody=document.getElementById('apps-tbody');
+  tbody.innerHTML=filtered.map(a=>`
+    <tr>
+      <td style="min-width:160px">
+        <div style="font-weight:600;font-size:.85rem">${esc(a.role)}</div>
+        ${a.link?`<a href="${esc(a.link)}" target="_blank" rel="noopener noreferrer" class="quick-advert-btn" style="margin-top:.3rem;text-decoration:none">🔗 Advert ↗</a>`:''}
+      </td>
+      <td>${esc(a.company||'')}</td>
+      <td>${esc(a.agency||'')}</td>
+      <td><span class="badge status-${cssStatus(a.status)}" onclick="openStatusModal('${a.id}')" title="Click to change status" style="cursor:pointer">${a.status} ▾</span></td>
+      <td><span style="font-size:.78rem;color:var(--text2)">${a.cv||'—'}</span></td>
+      <td><span class="badge priority-${a.priority||'Medium'}">${a.priority||'—'}</span></td>
+      <td>${a.rate?'£'+a.rate:''}</td>
+      <td style="font-size:.78rem">${a.ir35||'—'}</td>
+      <td style="white-space:nowrap">${fmtDate(a.dateApplied)}</td>
+      <td style="white-space:nowrap;${a.followup&&a.followup<today?'color:var(--danger);font-weight:600':''}">${fmtDate(a.followup)}</td>
+      <td><div class="td-actions">
+        <button class="btn btn-icon btn-sm" onclick="viewApp('${a.id}')" title="View">👁</button>
+        <button class="btn btn-icon btn-sm" onclick="openAppModal('${a.id}')" title="Edit">✏️</button>
+        <button class="btn btn-icon btn-sm" onclick="deleteApp('${a.id}')" title="Delete">🗑</button>
+      </div></td>
+    </tr>`).join('');
+
   document.getElementById('apps-empty').style.display=filtered.length?'none':'block';
   document.getElementById('apps-table').style.display=filtered.length?'':'none';
 }
-function populateAgencyFilter(){ const agencies=[...new Set(apps.map(a=>a.agency).filter(Boolean))].sort(); const sel=document.getElementById('f-agency'); const cur=sel.value; sel.innerHTML='<option value="">All Agencies</option>'+agencies.map(a=>`<option>${esc(a)}</option>`).join(''); sel.value=cur; }
+
+function populateAgencyFilter(){
+  const agencies=[...new Set(apps.map(a=>a.agency).filter(Boolean))].sort();
+  const sel=document.getElementById('f-agency');
+  const cur=sel.value;
+  sel.innerHTML='<option value="">All Agencies</option>'+agencies.map(a=>`<option>${esc(a)}</option>`).join('');
+  sel.value=cur;
+}
 
 // =====================================================================
 // RECRUITERS
@@ -767,24 +1127,64 @@ function openRecModal(id){
   document.getElementById('r-notes').value=r.notes||'';
   openModal('rec-modal');
 }
+
 function saveRec(){
   const name=document.getElementById('r-name').value.trim();
   if(!name){ toast('Please enter a recruiter name','err'); return; }
-  const obj={id:editRecId||uid(),name,agency:v('r-agency'),linkedin:v('r-linkedin'),specialist:v('r-specialist'),lastContact:v('r-lastcontact'),nextFollowup:v('r-nextfollowup'),roles:v('r-roles'),notes:v('r-notes')};
-  if(editRecId){ const i=recs.findIndex(x=>x.id===editRecId); recs[i]=obj; } else recs.unshift(obj);
+  const obj={
+    id:editRecId||uid(), name,
+    agency:v('r-agency'), linkedin:v('r-linkedin'),
+    specialist:v('r-specialist'),
+    lastContact:v('r-lastcontact'), nextFollowup:v('r-nextfollowup'),
+    roles:v('r-roles'), notes:v('r-notes')
+  };
+  if(editRecId){ const i=recs.findIndex(x=>x.id===editRecId); recs[i]=obj; }
+  else recs.unshift(obj);
   save(); closeModal('rec-modal'); populateRecAgencyFilter(); renderRecs();
   toast(editRecId?'Recruiter updated':'Recruiter saved');
 }
-function deleteRec(id){ if(!confirm('Delete this recruiter?')) return; recs=recs.filter(r=>r.id!==id); save(); renderRecs(); toast('Deleted'); }
+
+function deleteRec(id){
+  if(!confirm('Delete this recruiter?')) return;
+  recs=recs.filter(r=>r.id!==id); save(); renderRecs(); toast('Deleted');
+}
+
 function renderRecs(){
   const search=(document.getElementById('rec-search').value||'').toLowerCase();
   const fAgency=document.getElementById('rf-agency').value;
   const today=todayStr();
-  const filtered=recs.filter(r=>{ if(search&&![r.name,r.agency,r.specialist,r.roles,r.notes].join(' ').toLowerCase().includes(search)) return false; if(fAgency&&r.agency!==fAgency) return false; return true; });
-  document.getElementById('recs-tbody').innerHTML=filtered.map(r=>`<tr><td><div style="font-weight:600">${esc(r.name)}</div>${r.linkedin?`<a href="${esc(r.linkedin)}" target="_blank" rel="noopener noreferrer" style="font-size:.75rem">&#x1F517; LinkedIn</a>`:''}</td><td>${esc(r.agency||'')}</td><td style="font-size:.78rem">${esc(r.specialist||'')}</td><td style="white-space:nowrap">${fmtDate(r.lastContact)}</td><td style="white-space:nowrap;${r.nextFollowup&&r.nextFollowup<=today?'color:var(--warn);font-weight:600':''}">${fmtDate(r.nextFollowup)}</td><td style="font-size:.8rem;max-width:150px">${esc(r.roles||'')}</td><td style="font-size:.78rem;max-width:180px;color:var(--text2)">${esc(r.notes||'')}</td><td><div class="td-actions"><button class="btn btn-icon btn-sm" onclick="openRecModal('${r.id}')" title="Edit">&#x270F;&#xFE0F;</button><button class="btn btn-icon btn-sm" onclick="deleteRec('${r.id}')" title="Delete">&#x1F5D1;</button></div></td></tr>`).join('');
+  const filtered=recs.filter(r=>{
+    if(search&&![r.name,r.agency,r.specialist,r.roles,r.notes].join(' ').toLowerCase().includes(search)) return false;
+    if(fAgency&&r.agency!==fAgency) return false;
+    return true;
+  });
+  const tbody=document.getElementById('recs-tbody');
+  tbody.innerHTML=filtered.map(r=>`
+    <tr>
+      <td><div style="font-weight:600">${esc(r.name)}</div>
+        ${r.linkedin?`<a href="${esc(r.linkedin)}" target="_blank" rel="noopener noreferrer" style="font-size:.75rem">🔗 LinkedIn</a>`:''}
+      </td>
+      <td>${esc(r.agency||'')}</td>
+      <td style="font-size:.78rem">${esc(r.specialist||'')}</td>
+      <td style="white-space:nowrap">${fmtDate(r.lastContact)}</td>
+      <td style="white-space:nowrap;${r.nextFollowup&&r.nextFollowup<=today?'color:var(--warn);font-weight:600':''}">${fmtDate(r.nextFollowup)}</td>
+      <td style="font-size:.8rem;max-width:150px">${esc(r.roles||'')}</td>
+      <td style="font-size:.78rem;max-width:180px;color:var(--text2)">${esc(r.notes||'')}</td>
+      <td><div class="td-actions">
+        <button class="btn btn-icon btn-sm" onclick="openRecModal('${r.id}')" title="Edit">✏️</button>
+        <button class="btn btn-icon btn-sm" onclick="deleteRec('${r.id}')" title="Delete">🗑</button>
+      </div></td>
+    </tr>`).join('');
   document.getElementById('recs-empty').style.display=filtered.length?'none':'block';
 }
-function populateRecAgencyFilter(){ const agencies=[...new Set(recs.map(r=>r.agency).filter(Boolean))].sort(); const sel=document.getElementById('rf-agency'); const cur=sel.value; sel.innerHTML='<option value="">All Agencies</option>'+agencies.map(a=>`<option>${esc(a)}</option>`).join(''); sel.value=cur; }
+
+function populateRecAgencyFilter(){
+  const agencies=[...new Set(recs.map(r=>r.agency).filter(Boolean))].sort();
+  const sel=document.getElementById('rf-agency');
+  const cur=sel.value;
+  sel.innerHTML='<option value="">All Agencies</option>'+agencies.map(a=>`<option>${esc(a)}</option>`).join('');
+  sel.value=cur;
+}
 
 // =====================================================================
 // DAILY LOG
@@ -801,163 +1201,375 @@ function openDailyModal(id){
   document.getElementById('d-notes').value=d.notes||'';
   openModal('daily-modal');
 }
+
 function saveDaily(){
-  const date=v('d-date'); if(!date){ toast('Please select a date','err'); return; }
-  const obj={id:editDailyId||uid(),date,apps:v('d-apps'),recs:v('d-recs'),fu:v('d-fu'),calls:v('d-calls'),interviews:v('d-interviews'),notes:v('d-notes')};
-  if(editDailyId){ const i=daily.findIndex(x=>x.id===editDailyId); daily[i]=obj; } else daily.unshift(obj);
+  const date=v('d-date');
+  if(!date){ toast('Please select a date','err'); return; }
+  const obj={
+    id:editDailyId||uid(), date,
+    apps:v('d-apps'), recs:v('d-recs'), fu:v('d-fu'),
+    calls:v('d-calls'), interviews:v('d-interviews'), notes:v('d-notes')
+  };
+  if(editDailyId){ const i=daily.findIndex(x=>x.id===editDailyId); daily[i]=obj; }
+  else daily.unshift(obj);
   daily.sort((a,b)=>b.date.localeCompare(a.date));
   save(); closeModal('daily-modal'); renderDaily();
   toast(editDailyId?'Log updated':'Log saved');
 }
-function deleteDaily(id){ if(!confirm('Delete this log entry?')) return; daily=daily.filter(d=>d.id!==id); save(); renderDaily(); toast('Deleted'); }
+
+function deleteDaily(id){
+  if(!confirm('Delete this log entry?')) return;
+  daily=daily.filter(d=>d.id!==id); save(); renderDaily(); toast('Deleted');
+}
+
 function renderDaily(){
-  document.getElementById('daily-tbody').innerHTML=daily.map(d=>`<tr><td style="white-space:nowrap;font-weight:600">${fmtDate(d.date)}</td><td style="text-align:center">${d.apps||0}</td><td style="text-align:center">${d.recs||0}</td><td style="text-align:center">${d.fu||0}</td><td style="text-align:center">${d.calls||0}</td><td style="text-align:center">${d.interviews||0}</td><td style="font-size:.8rem;color:var(--text2)">${esc(d.notes||'')}</td><td><div class="td-actions"><button class="btn btn-icon btn-sm" onclick="openDailyModal('${d.id}')" title="Edit">&#x270F;&#xFE0F;</button><button class="btn btn-icon btn-sm" onclick="deleteDaily('${d.id}')" title="Delete">&#x1F5D1;</button></div></td></tr>`).join('');
+  const tbody=document.getElementById('daily-tbody');
+  tbody.innerHTML=daily.map(d=>`
+    <tr>
+      <td style="white-space:nowrap;font-weight:600">${fmtDate(d.date)}</td>
+      <td style="text-align:center">${d.apps||0}</td>
+      <td style="text-align:center">${d.recs||0}</td>
+      <td style="text-align:center">${d.fu||0}</td>
+      <td style="text-align:center">${d.calls||0}</td>
+      <td style="text-align:center">${d.interviews||0}</td>
+      <td style="font-size:.8rem;color:var(--text2)">${esc(d.notes||'')}</td>
+      <td><div class="td-actions">
+        <button class="btn btn-icon btn-sm" onclick="openDailyModal('${d.id}')" title="Edit">✏️</button>
+        <button class="btn btn-icon btn-sm" onclick="deleteDaily('${d.id}')" title="Delete">🗑</button>
+      </div></td>
+    </tr>`).join('');
   document.getElementById('daily-empty').style.display=daily.length?'none':'block';
 }
 
 // =====================================================================
 // TEMPLATES
 // =====================================================================
-function buildTemplate1(){ const name=document.getElementById('t1-name').value.trim()||'[Name]'; document.getElementById('template1-output').textContent=`Hi ${name},\n\nI'm a Senior IT Project Manager with over 15 years' delivery experience, most recently working as a Cyber Security Project Manager within financial services / insurance.\n\nRecent delivery includes SecOps project delivery, Mend vulnerability management onboarding, Sonatype Nexus design/setup and repository onboarding, NetSPI continuous penetration testing, and previous CrowdStrike Falcon EDR delivery across large enterprise environments.\n\nI'm available for a new contract shortly and am open to Cyber Security PM, SecOps PM, IT Project Manager, Infrastructure PM, Technical PM, Transformation PM and Financial Services PM roles.\n\nPlease let me know if you are covering anything suitable.\n\nKind regards`; }
-function buildTemplate2(){ const name=document.getElementById('t2-name').value.trim()||'[Name]'; const role=document.getElementById('t2-role').value.trim()||'[Role Title]'; document.getElementById('template2-output').textContent=`Hi ${name},\n\nI applied for the ${role} contract and wanted to check whether my profile is suitable.\n\nI have strong IT project management experience with recent SecOps / cyber delivery across Mend, Sonatype Nexus, NetSPI and enterprise security tooling, plus wider infrastructure, transformation and stakeholder delivery experience.\n\nHappy to discuss availability and fit.\n\nKind regards`; }
-function copyTemplate(id){ const text=document.getElementById(id).textContent; navigator.clipboard.writeText(text).then(()=>toast('Copied to clipboard!')).catch(()=>{ const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta); toast('Copied!'); }); }
+function buildTemplate1(){
+  const name=document.getElementById('t1-name').value.trim()||'[Name]';
+  document.getElementById('template1-output').textContent=
+`Hi ${name},
+
+I'm a Senior IT Project Manager with over 15 years' delivery experience, most recently working as a Cyber Security Project Manager within financial services / insurance.
+
+Recent delivery includes SecOps project delivery, Mend vulnerability management onboarding, Sonatype Nexus design/setup and repository onboarding, NetSPI continuous penetration testing, and previous CrowdStrike Falcon EDR delivery across large enterprise environments.
+
+I'm available for a new contract shortly and am open to Cyber Security PM, SecOps PM, IT Project Manager, Infrastructure PM, Technical PM, Transformation PM and Financial Services PM roles.
+
+Please let me know if you are covering anything suitable.
+
+Kind regards`;
+}
+
+function buildTemplate2(){
+  const name=document.getElementById('t2-name').value.trim()||'[Name]';
+  const role=document.getElementById('t2-role').value.trim()||'[Role Title]';
+  document.getElementById('template2-output').textContent=
+`Hi ${name},
+
+I applied for the ${role} contract and wanted to check whether my profile is suitable.
+
+I have strong IT project management experience with recent SecOps / cyber delivery across Mend, Sonatype Nexus, NetSPI and enterprise security tooling, plus wider infrastructure, transformation and stakeholder delivery experience.
+
+Happy to discuss availability and fit.
+
+Kind regards`;
+}
+
+function copyTemplate(id){
+  const text=document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(()=>toast('Copied to clipboard!')).catch(()=>{
+    const ta=document.createElement('textarea');
+    ta.value=text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+    toast('Copied!');
+  });
+}
 
 // =====================================================================
 // LINKEDIN
 // =====================================================================
 function buildLinkedIn(){
-  const base='https://www.linkedin.com/jobs/search/?keywords=',loc='&location=United+Kingdom&f_TP=1%2C2&f_JT=C';
+  const base='https://www.linkedin.com/jobs/search/?keywords=';
+  const loc='&location=United+Kingdom&f_TP=1%2C2&f_JT=C';
+  const cyberSearches=[
+    {label:'Cyber Security Project Manager',q:'Cyber+Security+Project+Manager'},
+    {label:'SecOps Project Manager',q:'SecOps+Project+Manager'},
+    {label:'Application Security PM',q:'Application+Security+Project+Manager'},
+    {label:'Vulnerability Management PM',q:'Vulnerability+Management+Project+Manager'},
+    {label:'Security Transformation PM',q:'Security+Transformation+Project+Manager'},
+    {label:'DevSecOps Project Manager',q:'DevSecOps+Project+Manager'},
+    {label:'Cyber PM – Financial Services',q:'Cyber+Project+Manager+Financial+Services'},
+    {label:'EDR / Endpoint Security PM',q:'Endpoint+Security+Project+Manager'},
+  ];
+  const itpmSearches=[
+    {label:'Senior IT Project Manager',q:'Senior+IT+Project+Manager'},
+    {label:'IT Project Manager – Contract',q:'IT+Project+Manager+Contract'},
+    {label:'Infrastructure Project Manager',q:'Infrastructure+Project+Manager'},
+    {label:'Technical Project Manager',q:'Technical+Project+Manager'},
+    {label:'Transformation PM – FS',q:'Transformation+Project+Manager+Financial+Services'},
+    {label:'Cloud / Azure Project Manager',q:'Azure+Cloud+Project+Manager'},
+    {label:'Service Transition PM',q:'Service+Transition+Project+Manager'},
+    {label:'Technology PM – Insurance',q:'Technology+Project+Manager+Insurance'},
+  ];
+  const recSearches=[
+    {label:'Find IT PM Recruiters',q:'IT+Project+Manager+Recruiter'},
+    {label:'Find Cyber Security Recruiters',q:'Cyber+Security+Recruiter'},
+    {label:'Hays Technology',q:'Hays+Technology'},
+    {label:'Harvey Nash',q:'Harvey+Nash+Technology'},
+    {label:'Lorien Resourcing',q:'Lorien+Resourcing'},
+    {label:'La Fosse Associates',q:'La+Fosse+Associates'},
+    {label:'Barclay Simpson',q:'Barclay+Simpson'},
+    {label:'Eames Consulting',q:'Eames+Consulting'},
+  ];
   const liSvg=`<svg class="li-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`;
-  const cyber=[{label:'Cyber Security Project Manager',q:'Cyber+Security+Project+Manager'},{label:'SecOps Project Manager',q:'SecOps+Project+Manager'},{label:'Application Security PM',q:'Application+Security+Project+Manager'},{label:'Vulnerability Management PM',q:'Vulnerability+Management+Project+Manager'},{label:'Security Transformation PM',q:'Security+Transformation+Project+Manager'},{label:'DevSecOps Project Manager',q:'DevSecOps+Project+Manager'},{label:'Cyber PM - Financial Services',q:'Cyber+Project+Manager+Financial+Services'},{label:'EDR / Endpoint Security PM',q:'Endpoint+Security+Project+Manager'}];
-  const itpm=[{label:'Senior IT Project Manager',q:'Senior+IT+Project+Manager'},{label:'IT Project Manager - Contract',q:'IT+Project+Manager+Contract'},{label:'Infrastructure Project Manager',q:'Infrastructure+Project+Manager'},{label:'Technical Project Manager',q:'Technical+Project+Manager'},{label:'Transformation PM - FS',q:'Transformation+Project+Manager+Financial+Services'},{label:'Cloud / Azure Project Manager',q:'Azure+Cloud+Project+Manager'},{label:'Service Transition PM',q:'Service+Transition+Project+Manager'},{label:'Technology PM - Insurance',q:'Technology+Project+Manager+Insurance'}];
-  const recS=[{label:'Find IT PM Recruiters',q:'IT+Project+Manager+Recruiter'},{label:'Find Cyber Security Recruiters',q:'Cyber+Security+Recruiter'},{label:'Hays Technology',q:'Hays+Technology'},{label:'Harvey Nash',q:'Harvey+Nash+Technology'},{label:'Lorien Resourcing',q:'Lorien+Resourcing'},{label:'La Fosse Associates',q:'La+Fosse+Associates'},{label:'Barclay Simpson',q:'Barclay+Simpson'},{label:'Eames Consulting',q:'Eames+Consulting'}];
-  const btn=(s,url)=>`<a href="${url}" target="_blank" rel="noopener noreferrer" class="li-btn">${liSvg}${s.label}</a>`;
-  document.getElementById('li-cyber').innerHTML=cyber.map(s=>btn(s,base+s.q+loc)).join('');
-  document.getElementById('li-itpm').innerHTML=itpm.map(s=>btn(s,base+s.q+loc)).join('');
-  const rBase='https://www.linkedin.com/search/results/people/?keywords=';
-  document.getElementById('li-recs').innerHTML=recS.map(s=>btn(s,rBase+s.q+'&network=%5B%22F%22%2C%22S%22%5D')).join('');
+  function renderBtns(cId,searches,urlBase,suffix){
+    document.getElementById(cId).innerHTML=searches.map(s=>
+      `<a href="${urlBase}${s.q}${suffix}" target="_blank" rel="noopener noreferrer" class="li-btn">${liSvg}${s.label}</a>`).join('');
+  }
+  renderBtns('li-cyber',cyberSearches,base,loc);
+  renderBtns('li-itpm',itpmSearches,base,loc);
+  const recBase='https://www.linkedin.com/search/results/people/?keywords=';
+  document.getElementById('li-recs').innerHTML=recSearches.map(s=>
+    `<a href="${recBase}${s.q}&network=%5B%22F%22%2C%22S%22%5D" target="_blank" rel="noopener noreferrer" class="li-btn">${liSvg}${s.label}</a>`).join('');
 }
 
 // =====================================================================
-// JOB SITE SEARCH
+// JOB SITE SEARCH PANEL
 // =====================================================================
-function toggleSearchPanel(){ const body=document.getElementById('site-search-body'),btn=document.getElementById('site-search-toggle'),hidden=body.style.display==='none'; body.style.display=hidden?'':'none'; btn.textContent=hidden?'&#x25B2; Hide':'&#x25BC; Show'; }
+function toggleSearchPanel(){
+  const body=document.getElementById('site-search-body');
+  const btn=document.getElementById('site-search-toggle');
+  const hidden=body.style.display==='none';
+  body.style.display=hidden?'':'none';
+  btn.textContent=hidden?'▲ Hide':'▼ Show';
+}
 function checkAllSites(state){ document.querySelectorAll('input[name="jobsite"]').forEach(c=>c.checked=state); }
+
 function runSiteSearch(){
   const sites=[...document.querySelectorAll('input[name="jobsite"]:checked')].map(c=>c.value);
   if(!sites.length){ alert('Please tick at least one job site.'); return; }
-  const focus=document.getElementById('ss-rolefocus').value,contract=document.getElementById('ss-contract').value,location=document.getElementById('ss-location').value;
-  const q={cyber:contract==='contract'?'Cyber+Security+Project+Manager+contract':'Cyber+Security+Project+Manager',itpm:contract==='contract'?'IT+Project+Manager+contract':'IT+Project+Manager',both:contract==='contract'?'Project+Manager+cyber+OR+IT+contract':'Project+Manager+cyber+OR+IT'}[focus]||'Project+Manager';
-  const l={london:'London',uk:'United+Kingdom',remote:'Remote+UK'}[location]||'United+Kingdom';
-  const urls={CWJobs:`https://www.cwjobs.co.uk/jobs?keywords=${q}&location=${l}`,Reed:`https://www.reed.co.uk/jobs?keywords=${q}&location=${l}`,Totaljobs:`https://www.totaljobs.com/jobs?keywords=${q}&location=${l}`,LinkedIn:`https://www.linkedin.com/jobs/search/?keywords=${q}&location=${l}&f_JT=C`,JobServe:`https://www.jobserve.com/gb/en/JobSearch.aspx?q=${q}&l=${l}`,Indeed:`https://uk.indeed.com/jobs?q=${q}&l=${l}`,eFinancialCareers:`https://www.efinancialcareers.co.uk/search?q=${q}&location=${l}`,ContractorUK:`https://www.contractoruk.com/jobs/?q=${q}&l=${l}`,CityJobs:`https://www.cityjobs.com/jobs?q=${q}&l=${l}`};
-  const linksEl=document.getElementById('ss-links'); linksEl.style.display='block';
-  linksEl.innerHTML='<div style="font-size:.8rem;color:var(--text3);margin-bottom:.4rem">Click any link if it did not open automatically:</div>'+sites.map(s=>`<a href="${urls[s]||'#'}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="margin:.2rem">${s} &#x2197;</a>`).join('');
-  sites.forEach(s=>{ if(urls[s]) window.open(urls[s],'_blank'); });
+  const focus=document.getElementById('ss-rolefocus').value;
+  const contract=document.getElementById('ss-contract').value;
+  const location=document.getElementById('ss-location').value;
+
+  const queries={
+    cyber:  contract==='contract'?'Cyber+Security+Project+Manager+contract':'Cyber+Security+Project+Manager',
+    itpm:   contract==='contract'?'IT+Project+Manager+contract':'IT+Project+Manager',
+    both:   contract==='contract'?'Project+Manager+cyber+OR+IT+contract':'Project+Manager+cyber+OR+IT'
+  };
+  const locQ={london:'London',uk:'United+Kingdom',remote:'Remote+UK'};
+  const q=queries[focus]||queries.both;
+  const l=locQ[location]||'United+Kingdom';
+
+  const siteUrls={
+    CWJobs:            `https://www.cwjobs.co.uk/jobs/${q.toLowerCase().replace(/\+/g,'-')}?location=${l}&radius=30`,
+    Reed:              `https://www.reed.co.uk/jobs/${q.toLowerCase().replace(/\+/g,'-')}-jobs?keywords=${q}&location=${l}`,
+    Totaljobs:         `https://www.totaljobs.com/jobs/${q.toLowerCase().replace(/\+/g,'-')}?keywords=${q}&location=${l}`,
+    LinkedIn:          `https://www.linkedin.com/jobs/search/?keywords=${q}&location=${l.replace(/\+/g,'%20')}&f_JT=C`,
+    JobServe:          `https://www.jobserve.com/gb/en/JobSearch.aspx?shid=&q=${q}&l=${l}`,
+    Indeed:            `https://uk.indeed.com/jobs?q=${q}&l=${l.replace(/\+/g,'+')}`,
+    eFinancialCareers: `https://www.efinancialcareers.co.uk/search?q=${q}&location=${l}`,
+    ContractorUK:      `https://www.contractoruk.com/jobs/?q=${q}&l=${l}`,
+    CityJobs:          `https://www.cityjobs.com/jobs?q=${q}&l=${l}`,
+  };
+
+  const linksEl=document.getElementById('ss-links');
+  linksEl.style.display='block';
+  linksEl.innerHTML=`<div style="font-size:.8rem;color:var(--text3);margin-bottom:.4rem">Opening searches — click any link below if it didn't open:</div>`+
+    sites.map(s=>`<a href="${siteUrls[s]||'#'}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="margin:.2rem">${s} ↗</a>`).join('');
+
+  sites.forEach(s=>{ if(siteUrls[s]) window.open(siteUrls[s],'_blank'); });
 }
 
 // =====================================================================
-// STATUS MODAL
+// DATA MANAGEMENT
 // =====================================================================
-let statusModalAppId=null;
-function openStatusModal(id){ statusModalAppId=id; const a=apps.find(x=>x.id===id); if(!a) return; document.getElementById('status-modal-role').textContent=a.role+(a.company?' @ '+a.company:''); document.getElementById('sm-status').value=a.status||'Found'; document.getElementById('sm-followup').value=a.followup||''; openModal('status-modal'); }
-function saveStatusChange(){ if(!statusModalAppId) return; const i=apps.findIndex(x=>x.id===statusModalAppId); if(i===-1) return; apps[i].status=document.getElementById('sm-status').value; const fu=document.getElementById('sm-followup').value; if(fu) apps[i].followup=fu; save(); closeModal('status-modal'); renderApps(); renderDashboard(); toast('Status updated'); }
-
-// =====================================================================
-// CV AUTO-SUGGEST
-// =====================================================================
-const CYBER_KW=['cyber','secops','security','soc','devsecops','siem','iam','pam','vulnerability','penetration','edr','endpoint','mend','sonatype','netspi','crowdstrike','qualys','zscaler','appsec','infosec'];
-const ITPM_KW=['it project','senior it','infrastructure','technical pm','technology pm','transformation','service transition','cloud','azure','aws','digital','software delivery','business change','regulatory','financial services pm','insurance pm'];
-function suggestCV(t){ const l=(t||'').toLowerCase(); const c=CYBER_KW.filter(k=>l.includes(k)).length,p=ITPM_KW.filter(k=>l.includes(k)).length; if(c>p) return 'Cyber CV'; if(p>c) return 'IT PM CV'; if(l.includes('cyber')||l.includes('security')||l.includes('secops')) return 'Cyber CV'; return ''; }
-function onQaRoleInput(){ const s=suggestCV(document.getElementById('qa-role').value),b=document.getElementById('qa-cv-suggest'),sel=document.getElementById('qa-cv'); if(s){ b.textContent='-> '+s; b.className='cv-suggest '+(s==='Cyber CV'?'cyber':'itpm'); b.style.display='inline-block'; sel.value=s; } else b.style.display='none'; }
-function onRoleTitleInput(){ const s=suggestCV(document.getElementById('a-role').value); if(s){ const sel=document.getElementById('a-cv'); if(!sel.value) sel.value=s; const h=document.getElementById('a-cv-hint'); if(h) h.innerHTML=`<span class="cv-suggest ${s==='Cyber CV'?'cyber':'itpm'}" style="margin-left:0">${s} suggested</span>`; } }
-
-// =====================================================================
-// QUICK ADD
-// =====================================================================
-function openQuickAdd(){ ['qa-role','qa-company','qa-agency','qa-rate','qa-link'].forEach(id=>document.getElementById(id).value=''); document.getElementById('qa-source').value=''; document.getElementById('qa-cv').value=''; document.getElementById('qa-status').value='Found'; document.getElementById('qa-priority').value='Medium'; document.getElementById('qa-ir35').value=''; document.getElementById('qa-cv-suggest').style.display='none'; openModal('quick-add-modal'); setTimeout(()=>document.getElementById('qa-role').focus(),100); }
-function saveQuickAdd(){
-  const role=document.getElementById('qa-role').value.trim(); if(!role){ toast('Please enter a role title','err'); return; }
-  const today=todayStr(),followup=addWorkingDays(today,2),cv=document.getElementById('qa-cv').value||suggestCV(role),roleType=cv==='Cyber CV'?'Cyber / SecOps':cv==='IT PM CV'?'IT PM':'',link=document.getElementById('qa-link').value.trim();
-  const obj={id:uid(),role,company:v('qa-company'),agency:v('qa-agency'),recName:'',source:v('qa-source'),link,dateFound:today,dateApplied:'',cv,roleType,rate:v('qa-rate'),ir35:v('qa-ir35')||'Unknown',location:'',work:'',status:v('qa-status')||'Found',priority:v('qa-priority')||'Medium',followup,notes:''};
-  apps.unshift(obj); save(); closeModal('quick-add-modal'); populateAgencyFilter();
-  if(link) window.open(link,'_blank');
-  toast(`Saved - follow-up set for ${fmtDate(followup)}${link?' - Advert opened':''}`);
-  const ap=document.querySelector('.page.active');
-  if(ap&&ap.id==='page-dashboard') renderDashboard();
-  if(ap&&ap.id==='page-applications'){ populateAgencyFilter(); renderApps(); }
+function exportCSV(rows,filename){
+  if(!rows.length){ toast('Nothing to export','err'); return; }
+  const keys=Object.keys(rows[0]).filter(k=>k!=='id');
+  const csv=[keys.join(','),...rows.map(r=>keys.map(k=>JSON.stringify(r[k]||'')).join(','))].join('\n');
+  download(filename,csv,'text/csv');
 }
-
-// =====================================================================
-// DATA EXPORT / IMPORT
-// =====================================================================
-function exportCSV(rows,filename){ if(!rows.length){ toast('Nothing to export','err'); return; } const keys=Object.keys(rows[0]).filter(k=>k!=='id'); const csv=[keys.join(','),...rows.map(r=>keys.map(k=>JSON.stringify(r[k]||'')).join(','))].join('\n'); download(filename,csv,'text/csv'); }
 function exportAppsCSV(){ exportCSV(apps,'applications.csv'); }
 function exportRecsCSV(){ exportCSV(recs,'recruiters.csv'); }
 function exportDailyCSV(){ exportCSV(daily,'daily-log.csv'); }
-function exportJSON(){ download('job-search-backup.json',JSON.stringify({apps,recs,daily,exported:new Date().toISOString()},null,2),'application/json'); toast('Private backup downloaded'); }
 
-// PUBLIC EXPORT — strips private fields
+function exportJSON(){
+  const data={apps,recs,daily,exported:new Date().toISOString()};
+  download('job-search-backup.json',JSON.stringify(data,null,2),'application/json');
+  toast('Private backup downloaded');
+}
+
+/* ---- PHASE 2: PRIVACY CHECK ---- */
+function runPrivacyCheck(){
+  const EMAIL_RE=/[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/g;
+  const PHONE_RE=/(\+44|0044|07\d{9}|0[1-9]\d{8,9}|\d{5}\s\d{6})/g;
+  const ADDR_RE=/\b(street|road|avenue|lane|close|drive|crescent|place|gardens|house number|postcode|sw\d|se\d|n\d|nw\d|e\d|w\d|ec\d|wc\d)\b/gi;
+  const SALARY_RE=/\b(salary|£\d{2,3}k|minimum rate|day rate expectation|desired rate|target rate)\b/gi;
+  const CV_RE=/(\.pdf|\.docx?|cv.*file|Users\/|C:\\|\/home\/)/gi;
+  const PERSONAL_RE=/\b(national insurance|ni number|passport|date of birth|dob|home address|personal email)\b/gi;
+
+  const issues=[];
+  function scan(source,field,text){
+    if(!text) return;
+    const checks=[
+      {re:EMAIL_RE,label:'Email address',sev:'high'},
+      {re:PHONE_RE,label:'Phone number',sev:'high'},
+      {re:ADDR_RE,label:'Home address hint',sev:'medium'},
+      {re:SALARY_RE,label:'Salary/rate expectation',sev:'medium'},
+      {re:CV_RE,label:'CV file path',sev:'high'},
+      {re:PERSONAL_RE,label:'Personal identifier',sev:'high'},
+    ];
+    checks.forEach(({re,label,sev})=>{
+      re.lastIndex=0;
+      const m=text.match(re);
+      if(m) issues.push({source,field,problem:label,found:m[0],sev});
+    });
+  }
+
+  apps.forEach((a,i)=>{ scan(`Application #${i+1} (${a.role||'?'})`, 'Notes', a.notes); });
+  recs.forEach((r,i)=>{
+    scan(`Recruiter #${i+1} (${r.name||'?'})`, 'Email', r.email);
+    scan(`Recruiter #${i+1} (${r.name||'?'})`, 'Phone', r.phone);
+    scan(`Recruiter #${i+1} (${r.name||'?'})`, 'Notes', r.notes);
+  });
+  daily.forEach((d,i)=>{ scan(`Daily log ${d.date||i+1}`, 'Notes', d.notes); });
+
+  // Build modal
+  let html;
+  if(issues.length===0){
+    html=`<div style="text-align:center;padding:2rem 0">
+      <div style="font-size:3rem">✅</div>
+      <div style="font-size:1.2rem;font-weight:700;color:var(--success);margin-top:.5rem">No privacy issues found</div>
+      <div style="color:var(--text2);margin-top:.5rem;font-size:.9rem">Your data looks clean for public export.</div>
+    </div>`;
+  } else {
+    const rows=issues.map(i=>`
+      <tr>
+        <td style="padding:.5rem .75rem;border-bottom:1px solid var(--border);font-size:.82rem">${i.source}</td>
+        <td style="padding:.5rem .75rem;border-bottom:1px solid var(--border);font-size:.82rem">${i.field}</td>
+        <td style="padding:.5rem .75rem;border-bottom:1px solid var(--border);font-size:.82rem">${i.problem}</td>
+        <td style="padding:.5rem .75rem;border-bottom:1px solid var(--border);font-size:.82rem;color:var(--${i.sev==='high'?'danger':'warn'})">${i.sev.toUpperCase()}</td>
+        <td style="padding:.5rem .75rem;border-bottom:1px solid var(--border);font-size:.82rem;font-family:monospace;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${i.found}</td>
+      </tr>`).join('');
+    html=`<div style="margin-bottom:1rem;padding:.75rem;background:rgba(239,68,68,.12);border:1px solid var(--danger);border-radius:8px;font-size:.88rem;color:var(--danger)">
+      ⚠️ <strong>${issues.length} potential issue${issues.length>1?'s':''} found.</strong> Review below and clean your notes before using Public Export.
+    </div>
+    <div style="overflow-x:auto">
+    <table style="width:100%;border-collapse:collapse">
+      <thead><tr style="background:var(--bg3)">
+        <th style="padding:.5rem .75rem;text-align:left;font-size:.8rem;color:var(--text2)">Source</th>
+        <th style="padding:.5rem .75rem;text-align:left;font-size:.8rem;color:var(--text2)">Field</th>
+        <th style="padding:.5rem .75rem;text-align:left;font-size:.8rem;color:var(--text2)">Issue</th>
+        <th style="padding:.5rem .75rem;text-align:left;font-size:.8rem;color:var(--text2)">Severity</th>
+        <th style="padding:.5rem .75rem;text-align:left;font-size:.8rem;color:var(--text2)">Found</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table></div>`;
+  }
+
+  document.getElementById('privacy-modal-body').innerHTML=html;
+  const actionsEl=document.getElementById('privacy-modal-actions');
+  if(issues.length===0){
+    actionsEl.innerHTML=`<button class="btn btn-primary" onclick="exportPublicJSON();closeModal('privacy-modal')">🌐 Export Public Data</button>
+      <button class="btn btn-ghost" onclick="closeModal('privacy-modal')">Close</button>`;
+  } else {
+    actionsEl.innerHTML=`<button class="btn btn-ghost" onclick="exportPublicJSON();closeModal('privacy-modal')">Export Anyway</button>
+      <button class="btn btn-primary" onclick="closeModal('privacy-modal')">Close & Review Notes</button>`;
+  }
+  document.getElementById('privacy-modal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+/* ---- PHASE 3: PUBLIC EXPORT ---- */
 function exportPublicJSON(){
   const PUBLIC_APP_FIELDS=['role','company','agency','source','link','dateFound','dateApplied','cv','roleType','rate','ir35','location','work','status','priority','followup'];
   const PUBLIC_REC_FIELDS=['name','agency','specialist','lastContact','nextFollowup','roles'];
-  const publicApps=apps.map(a=>{ const o={}; PUBLIC_APP_FIELDS.forEach(f=>{ if(a[f]!==undefined) o[f]=a[f]; }); return o; });
-  const publicRecs=recs.map(r=>{ const o={}; PUBLIC_REC_FIELDS.forEach(f=>{ if(r[f]!==undefined) o[f]=r[f]; }); return o; });
-  const publicDaily=daily.map(d=>({date:d.date,apps:d.apps,recs:d.recs,fu:d.fu,calls:d.calls,interviews:d.interviews}));
-  download('job-search-public-data.json',JSON.stringify({apps:publicApps,recs:publicRecs,daily:publicDaily,exported:new Date().toISOString()},null,2),'application/json');
-  toast('Public data exported - safe to share');
+
+  const cleanApps=apps.map(a=>{
+    const o={};
+    PUBLIC_APP_FIELDS.forEach(f=>{ if(a[f]!==undefined) o[f]=a[f]; });
+    return o;
+  });
+  const cleanRecs=recs.map(r=>{
+    const o={};
+    PUBLIC_REC_FIELDS.forEach(f=>{ if(r[f]!==undefined) o[f]=r[f]; });
+    return o;
+  });
+  const cleanDaily=daily.map(d=>({date:d.date,applied:d.applied,contacted:d.contacted,followups:d.followups,calls:d.calls,interviews:d.interviews}));
+
+  const data={apps:cleanApps,recs:cleanRecs,daily:cleanDaily,exported:new Date().toISOString(),note:'Public export — private fields stripped'};
+  download('job-search-public-data.json',JSON.stringify(data,null,2),'application/json');
+  toast('Public data exported (private fields stripped)');
 }
 
-function importJSON(input){ const file=input.files[0]; if(!file) return; const reader=new FileReader(); reader.onload=e=>{ try{ const data=JSON.parse(e.target.result); if(!confirm('This will REPLACE all current data with the backup. Continue?')){ input.value=''; return; } apps=data.apps||[]; recs=data.recs||[]; daily=data.daily||[]; save(); toast('Backup restored'); renderDashboard(); showPage('dashboard'); }catch(err){ toast('Invalid JSON file','err'); } input.value=''; }; reader.readAsText(file); }
-function parseCSV(text){ const lines=text.trim().split('\n'),headers=lines[0].split(',').map(h=>h.replace(/^"|"$/g,'').trim()); return lines.slice(1).map(line=>{ const vals=[],obj={id:uid()}; let cur='',inQ=false; for(let c of line){ if(c==='"'&&!inQ)inQ=true; else if(c==='"'&&inQ)inQ=false; else if(c===','&&!inQ){vals.push(cur);cur='';}else cur+=c; } vals.push(cur); headers.forEach((h,i)=>{ obj[h]=vals[i]!==undefined?vals[i].replace(/^"|"$/g,''):''; }); return obj; }); }
-function importAppsCSV(input){ const file=input.files[0]; if(!file) return; const reader=new FileReader(); reader.onload=e=>{ try{ const rows=parseCSV(e.target.result); if(!confirm(`Import ${rows.length} applications? This will ADD to existing data.`)){ input.value=''; return; } apps=[...apps,...rows]; save(); renderApps(); toast(`Imported ${rows.length} applications`); }catch(err){ toast('Error reading CSV','err'); } input.value=''; }; reader.readAsText(file); }
-function importRecsCSV(input){ const file=input.files[0]; if(!file) return; const reader=new FileReader(); reader.onload=e=>{ try{ const rows=parseCSV(e.target.result); if(!confirm(`Import ${rows.length} recruiters? This will ADD to existing data.`)){ input.value=''; return; } recs=[...recs,...rows]; save(); renderRecs(); toast(`Imported ${rows.length} recruiters`); }catch(err){ toast('Error reading CSV','err'); } input.value=''; }; reader.readAsText(file); }
-function clearAllData(){ if(!confirm('Are you sure you want to delete ALL data?')) return; if(!confirm('Final check - permanently delete all data. Proceed?')) return; apps=[]; recs=[]; daily=[]; save(); renderDashboard(); toast('All data cleared'); }
-function download(filename,content,type){ const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([content],{type})); a.download=filename; a.click(); }
+function importJSON(input){
+  const file=input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    try{
+      const data=JSON.parse(e.target.result);
+      if(!confirm('⚠️ This will REPLACE all current data with the backup. Continue?')){ input.value=''; return; }
+      apps=data.apps||[]; recs=data.recs||[]; daily=data.daily||[];
+      save(); toast('Backup restored'); renderDashboard(); showPage('dashboard');
+    }catch(err){ toast('Invalid JSON file','err'); }
+    input.value='';
+  };
+  reader.readAsText(file);
+}
 
-// =====================================================================
-// PRIVACY CHECK
-// =====================================================================
-function runPrivacyCheck(){
-  const results=[];
-  const EMAIL_RE=/[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}/g;
-  const PHONE_RE=/(\+44|0044|07\d{9}|0[1-9]\d{8,9}|\d{5}\s\d{6})/g;
-  const ADDR_RE=/\b(street|road|avenue|lane|drive|close|court|way|place|gardens|house|flat|apartment)\b/gi;
-  const SALARY_RE=/\b(salary|£\d{2,3}k|minimum rate|bottom rate|mortgage|accept less|lowest|floor rate)\b/gi;
-  const CV_RE=/(\.pdf|\.docx?|cv.*file|file.*cv|Users\/|C:\\)/gi;
-  const PERSONAL_RE=/\b(national insurance|NI number|passport|date of birth|DOB|right to work|home address|postcode)\b/gi;
-
-  function checkText(text, field, recordDesc){
-    if(!text) return;
-    const str=String(text);
-    if(EMAIL_RE.test(str)){ EMAIL_RE.lastIndex=0; results.push({field,record:recordDesc,problem:'Email address found',action:'Remove — keep private',severity:'high'}); }
-    if(PHONE_RE.test(str)){ PHONE_RE.lastIndex=0; results.push({field,record:recordDesc,problem:'Phone number found',action:'Remove — keep private',severity:'high'}); }
-    if(ADDR_RE.test(str)){ ADDR_RE.lastIndex=0; results.push({field,record:recordDesc,problem:'Address-like text found',action:'Review and remove if personal',severity:'medium'}); }
-    if(SALARY_RE.test(str)){ SALARY_RE.lastIndex=0; results.push({field,record:recordDesc,problem:'Salary / financial wording found',action:'Remove — keep private',severity:'high'}); }
-    if(CV_RE.test(str)){ CV_RE.lastIndex=0; results.push({field,record:recordDesc,problem:'CV file path or link found',action:'Remove — never publish CV paths',severity:'high'}); }
-    if(PERSONAL_RE.test(str)){ PERSONAL_RE.lastIndex=0; results.push({field,record:recordDesc,problem:'Personal identifier found',action:'Remove immediately',severity:'high'}); }
-  }
-
-  apps.forEach(a=>{
-    const desc=`Application: ${a.role||'Unknown role'}${a.company?' at '+a.company:''}`;
-    checkText(a.notes,'Notes',desc);
-    checkText(a.recName,'Recruiter Name',desc);
-    checkText(a.link,'Advert Link',desc);
+function parseCSV(text){
+  const lines=text.trim().split('\n');
+  const headers=lines[0].split(',').map(h=>h.replace(/^"|"$/g,'').trim());
+  return lines.slice(1).map(line=>{
+    const vals=[]; let cur='',inQ=false;
+    for(let c of line){ if(c==='"'&&!inQ){inQ=true;}else if(c==='"'&&inQ){inQ=false;}else if(c===','&&!inQ){vals.push(cur);cur='';}else{cur+=c;} }
+    vals.push(cur);
+    const obj={id:uid()};
+    headers.forEach((h,i)=>{ obj[h]=vals[i]!==undefined?vals[i].replace(/^"|"$/g,''):''; });
+    return obj;
   });
-  recs.forEach(r=>{
-    const desc=`Recruiter: ${r.name||'Unknown'} (${r.agency||''})`;
-    checkText(r.notes,'Notes',desc);
-    checkText(r.roles,'Roles Discussed',desc);
-  });
-  daily.forEach(d=>{ checkText(d.notes,'Daily Notes',`Daily log: ${d.date}`); });
+}
 
-  const el=document.getElementById('privacy-check-results');
-  el.style.display='block';
-  if(!results.length){
-    el.innerHTML=`<div style="background:linear-gradient(135deg,#1c3a28,#1a2e22);border:1px solid var(--success);border-radius:8px;padding:.85rem 1rem;display:flex;align-items:center;gap:.75rem"><span style="font-size:1.3rem">&#x2705;</span><div><div style="font-weight:700;color:var(--success)">No privacy issues found</div><div style="font-size:.82rem;color:var(--text2);margin-top:.2rem">Your data looks clean. Safe to export public data.</div></div></div>`;
-  } else {
-    el.innerHTML=`<div style="font-weight:700;margin-bottom:.75rem;color:var(--danger)">&#x26A0;&#xFE0F; ${results.length} issue${results.length>1?'s':''} found — review before sharing</div>`+
-      results.map(r=>`<div class="privacy-issue ${r.severity}"><div class="privacy-issue-field">${esc(r.field)}</div><div class="privacy-issue-detail"><div style="font-size:.78rem;color:var(--text3);margin-bottom:.2rem">${esc(r.record)}</div>${esc(r.problem)}</div><div class="privacy-issue-action">${esc(r.action)}</div></div>`).join('');
-  }
+function importAppsCSV(input){
+  const file=input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    try{
+      const rows=parseCSV(e.target.result);
+      if(!confirm(`Import ${rows.length} applications? This will ADD to existing data.`)){ input.value=''; return; }
+      apps=[...apps,...rows]; save(); renderApps(); toast(`Imported ${rows.length} applications`);
+    }catch(err){ toast('Error reading CSV','err'); }
+    input.value='';
+  };
+  reader.readAsText(file);
+}
+
+function importRecsCSV(input){
+  const file=input.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=e=>{
+    try{
+      const rows=parseCSV(e.target.result);
+      if(!confirm(`Import ${rows.length} recruiters? This will ADD to existing data.`)){ input.value=''; return; }
+      recs=[...recs,...rows]; save(); renderRecs(); toast(`Imported ${rows.length} recruiters`);
+    }catch(err){ toast('Error reading CSV','err'); }
+    input.value='';
+  };
+  reader.readAsText(file);
+}
+
+function clearAllData(){
+  if(!confirm('Are you sure you want to delete ALL data? This cannot be undone.')) return;
+  if(!confirm('Final check — this will permanently delete all applications, recruiters and logs. Proceed?')) return;
+  apps=[]; recs=[]; daily=[]; save(); renderDashboard();
+  toast('All data cleared');
+}
+
+function download(filename,content,type){
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([content],{type}));
+  a.download=filename; a.click();
 }
 
 // =====================================================================
@@ -968,14 +1580,164 @@ function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
 function cssStatus(s){ return (s||'').replace(/ /g,'-'); }
 function openModal(id){ document.getElementById(id).classList.add('open'); document.body.style.overflow='hidden'; }
 function closeModal(id){ document.getElementById(id).classList.remove('open'); document.body.style.overflow=''; }
-document.querySelectorAll('.modal-overlay').forEach(mo=>{ mo.addEventListener('click',e=>{ if(e.target===mo) closeModal(mo.id); }); });
+document.querySelectorAll('.modal-overlay').forEach(mo=>{
+  mo.addEventListener('click',e=>{ if(e.target===mo) closeModal(mo.id); });
+});
+
 let toastTimer;
-function toast(msg,type){ const el=document.getElementById('toast'); el.textContent=msg; el.className='show'+(type==='err'?' err':''); clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.className='',3000); }
+function toast(msg,type){
+  const el=document.getElementById('toast');
+  el.textContent=msg; el.className='show'+(type==='err'?' err':'');
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.className='',3000);
+}
+
+// =====================================================================
+// CV AUTO-SUGGEST
+// =====================================================================
+const CYBER_KW=['cyber','secops','security','soc','devsecops','siem','iam','pam','vulnerability','penetration','edr','endpoint','mend','sonatype','netspi','crowdstrike','qualys','zscaler','appsec','application sec','infosec'];
+const ITPM_KW =['it project','senior it','infrastructure','technical pm','technology pm','transformation','service transition','cloud','azure','aws','digital','software delivery','business change','regulatory','financial services pm','insurance pm','programme manager'];
+
+function suggestCV(roleTitle){
+  const lower=(roleTitle||'').toLowerCase();
+  const cyberScore=CYBER_KW.filter(k=>lower.includes(k)).length;
+  const itpmScore =ITPM_KW.filter(k=>lower.includes(k)).length;
+  if(cyberScore>itpmScore) return 'Cyber CV';
+  if(itpmScore>cyberScore) return 'IT PM CV';
+  if(lower.includes('cyber')||lower.includes('security')||lower.includes('secops')) return 'Cyber CV';
+  return '';
+}
+
+function onQaRoleInput(){
+  const role=document.getElementById('qa-role').value;
+  const suggestion=suggestCV(role);
+  const badge=document.getElementById('qa-cv-suggest');
+  const cvSel=document.getElementById('qa-cv');
+  if(suggestion){
+    badge.textContent='→ '+suggestion;
+    badge.className='cv-suggest '+(suggestion==='Cyber CV'?'cyber':'itpm');
+    badge.style.display='inline-block';
+    cvSel.value=suggestion;
+  } else { badge.style.display='none'; }
+}
+
+function onRoleTitleInput(){
+  const role=document.getElementById('a-role').value;
+  const suggestion=suggestCV(role);
+  if(suggestion){
+    const cvSel=document.getElementById('a-cv');
+    if(!cvSel.value) cvSel.value=suggestion;
+    const hint=document.getElementById('a-cv-hint');
+    if(hint) hint.innerHTML=`<span class="cv-suggest ${suggestion==='Cyber CV'?'cyber':'itpm'}" style="margin-left:0">${suggestion} suggested</span>`;
+  }
+}
+
+// =====================================================================
+// QUICK ADD
+// =====================================================================
+function openQuickAdd(){
+  ['qa-role','qa-company','qa-agency','qa-rate','qa-link'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('qa-source').value='';
+  document.getElementById('qa-cv').value='';
+  document.getElementById('qa-status').value='Found';
+  document.getElementById('qa-priority').value='Medium';
+  document.getElementById('qa-ir35').value='';
+  document.getElementById('qa-cv-suggest').style.display='none';
+  openModal('quick-add-modal');
+  setTimeout(()=>document.getElementById('qa-role').focus(),100);
+}
+
+function saveQuickAdd(){
+  const role=document.getElementById('qa-role').value.trim();
+  if(!role){ toast('Please enter a role title','err'); return; }
+  const today=todayStr();
+  const followup=addWorkingDays(today,2);
+  const cv=document.getElementById('qa-cv').value||suggestCV(role);
+  const roleType=cv==='Cyber CV'?'Cyber / SecOps':cv==='IT PM CV'?'IT PM':'';
+  const link=document.getElementById('qa-link').value.trim();
+  const obj={
+    id:uid(), role,
+    company:v('qa-company'), agency:v('qa-agency'), recName:'',
+    source:v('qa-source'),   link,
+    dateFound:today, dateApplied:'',
+    cv, roleType,
+    rate:v('qa-rate'), ir35:v('qa-ir35')||'Unknown',
+    location:'',   work:'',
+    status:v('qa-status')||'Found',
+    priority:v('qa-priority')||'Medium',
+    followup, notes:''
+  };
+  apps.unshift(obj);
+  save();
+  closeModal('quick-add-modal');
+  populateAgencyFilter();
+  if(link) window.open(link,'_blank');
+  toast(`Saved — follow-up set for ${fmtDate(followup)}${link?' · Advert opened':''}`);
+  const activePage=document.querySelector('.page.active');
+  if(activePage&&activePage.id==='page-dashboard') renderDashboard();
+  if(activePage&&activePage.id==='page-applications'){ populateAgencyFilter(); renderApps(); }
+}
+
+// =====================================================================
+// INLINE STATUS CHANGE
+// =====================================================================
+let statusModalAppId=null;
+function openStatusModal(id){
+  statusModalAppId=id;
+  const a=apps.find(x=>x.id===id); if(!a) return;
+  document.getElementById('status-modal-role').textContent=a.role+(a.company?' @ '+a.company:'');
+  document.getElementById('sm-status').value=a.status||'Found';
+  document.getElementById('sm-followup').value=a.followup||'';
+  openModal('status-modal');
+}
+function saveStatusChange(){
+  if(!statusModalAppId) return;
+  const i=apps.findIndex(x=>x.id===statusModalAppId); if(i===-1) return;
+  apps[i].status=document.getElementById('sm-status').value;
+  const fu=document.getElementById('sm-followup').value;
+  if(fu) apps[i].followup=fu;
+  save(); closeModal('status-modal'); renderApps(); renderDashboard();
+  toast('Status updated');
+}
+
+// =====================================================================
+// ATTENTION STRIP
+// =====================================================================
+function renderAttentionStrip(){
+  const today=todayStr();
+  const ACTIVE=['Applied','Recruiter contacted','Call booked','Submitted to client','Interview booked','Awaiting feedback','Found'];
+  const overdue   =apps.filter(a=>a.followup&&a.followup<today&&ACTIVE.includes(a.status)).length;
+  const dueToday  =apps.filter(a=>a.followup===today&&ACTIVE.includes(a.status)).length;
+  const toApply   =apps.filter(a=>a.status==='Found').length;
+  const interviews=apps.filter(a=>a.status==='Interview booked').length;
+  const awaiting  =apps.filter(a=>a.status==='Awaiting feedback').length;
+  const el=document.getElementById('dash-attention');
+  if(!el) return;
+  const items=[];
+  if(overdue>0)    items.push(`<span class="attention-pill" onclick="filterAndGo('duetoday','')" style="color:var(--danger);cursor:pointer">🔴 ${overdue} OVERDUE follow-up${overdue>1?'s':''}</span>`);
+  if(dueToday>0)   items.push(`<span class="attention-pill" onclick="filterAndGo('duetoday','')" style="color:var(--warn);cursor:pointer">🟡 ${dueToday} follow-up${dueToday>1?'s':''} due today</span>`);
+  if(interviews>0) items.push(`<span class="attention-pill" onclick="filterAndGo('status','Interview booked')" style="color:var(--success);cursor:pointer">🟢 ${interviews} interview${interviews>1?'s':''} booked</span>`);
+  if(awaiting>0)   items.push(`<span class="attention-pill" onclick="filterAndGo('status','Awaiting feedback')" style="color:var(--warn);cursor:pointer">🟠 ${awaiting} awaiting feedback</span>`);
+  if(toApply>0)    items.push(`<span class="attention-pill" onclick="filterAndGo('status','Found')" style="color:var(--text2);cursor:pointer">⚪ ${toApply} saved role${toApply>1?'s':''} — ready to apply</span>`);
+  if(items.length){
+    el.innerHTML=`<div class="attention-strip ${overdue>0?'':'warn'}">
+      <span style="font-weight:700;font-size:.85rem;color:var(--text)">⚡ Action needed</span>
+      ${items.join('')}
+      <span style="font-size:.7rem;color:var(--text3);margin-left:.25rem">tap to view</span>
+    </div>`;
+  } else {
+    el.innerHTML=`<div class="attention-strip warn" style="border-color:var(--success);background:linear-gradient(135deg,#1c3a28,#1a2e22)">
+      <span style="font-weight:700;font-size:.85rem;color:var(--success)">✅ All up to date — great work!</span>
+    </div>`;
+  }
+}
 
 // =====================================================================
 // INIT
 // =====================================================================
-document.addEventListener('DOMContentLoaded',()=>{ buildTemplate1(); buildTemplate2(); renderDashboard(); });
+document.addEventListener('DOMContentLoaded',()=>{
+  buildTemplate1();
+  buildTemplate2();
+  renderDashboard();
+});
 </script>
 </body>
-</html>
